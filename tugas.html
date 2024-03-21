@@ -512,7 +512,7 @@ document.write(`
 <ol class="arabic simple" start="6">
 <li><p>Setelah masuk kita dapat menggunakannya dengan membuat “New Project” isi nama proyek. Setelah itu gunakan sesuai kebutuhan karena disini kita menggunakan 2 database kita buat integrations 2 database yang kita buat kita sambungkan yakni MySQL dan Postgree.</p></li>
 </ol>
-<img src="image-20240320-183946.png" width="" align="" /></section>
+<img src="gambar/Deepnote.png" width="" align="" /></section>
 <section id="heidisql">
 <h3>3.HeidiSQL<a class="headerlink" href="#heidisql" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
@@ -527,7 +527,7 @@ document.write(`
 <ol class="arabic simple" start="4">
 <li><p>Untuk menggunakan nya kita tinggalmembuat newdatabase baru dan kita sambungakn ke deepnote dan aiven io sesuaikan dari nama databasenya tipenya dan password port aiven io kita. jika sudah bisa terhubung.</p></li>
 </ol>
-<img src="image-20240320-184144.png" width="" align="" /></section>
+<img src="gambar/Heidisql.png" width="" align="" /></section>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="mengumpulkan-dan-mendapatkan-data">
@@ -546,7 +546,7 @@ document.write(`
 <ol class="arabic simple" start="4">
 <li><p>Setelah ektrak selesai maka akan terdapat file hasil extrak an file “iris.csv”. file ini kita gunakan sebagai data yang kita gunakan dalam 2 database yang sudah kita buat di tools sebelumnya yakni MySQL dan PostgreeSQL.</p></li>
 </ol>
-<img src="image-20240320-184342.png" width="" align="" /></section>
+<img src="gambar/Datasets.png" width="" align="" /></section>
 <section id="membuat-database-dan-integrasinya-dengan-dbms-heidisql">
 <h2>Membuat database dan integrasinya dengan DBMS (HeidiSQL)<a class="headerlink" href="#membuat-database-dan-integrasinya-dengan-dbms-heidisql" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
@@ -592,7 +592,7 @@ document.write(`
 <ol class="arabic simple" start="4">
 <li><p>Ubah Table Name sesuai dengan isi datanya, dan ubah juga Quotes sesuai dengan database jenis apa MySQL atau PostgreSQL sesuai yang akan kita insertkan.</p></li>
 </ol>
-<img src="image-20240320-184804.png" width="" align="" /></section>
+<img src="gambar/Convert.png" width="" align="" /></section>
 <section id="menginputkan-data-ke-mysql-dan-postgresql">
 <h3>Menginputkan data ke MySQL dan PostgreSQL<a class="headerlink" href="#menginputkan-data-ke-mysql-dan-postgresql" title="Link to this heading">#</a></h3>
 <p>Setelah langkah konversi tadi kita masuk ketahap memasukkan data dengan cara dibawah ini dengan heidiSQL.</p>
@@ -1805,7 +1805,7 @@ Jarak antara titik data prediksi dan titik data tetangga  dihitung, dan titik da
 Accuracy of our model is equal 93.33 %.
 </pre></div>
 </div>
-<img alt="_images/3811192f1018a4f2a6a4c739d5dbbd876e48dbbed7c775ce6feb6a3c9541c5e6.png" src="_images/3811192f1018a4f2a6a4c739d5dbbd876e48dbbed7c775ce6feb6a3c9541c5e6.png" />
+<img alt="_images/3811192f1018a4f2a6a4c739d5dbbd876e48dbbed7c775ce6feb6a3c9541c5e6.png" src="gambar/grafik.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The optimal number of neighbors is 9.
 </pre></div>
 </div>
@@ -1965,7 +1965,7 @@ dtype: int64
 </div>
 </div>
 <p>Rumus Knn yang digunakan</p>
-<img src="image-20240320-193411.png" width="" align="left" /><p>Kelebihan dari Metode Knn</p>
+<img src="gambar/gam1.png" width="" align="left" /><p>Kelebihan dari Metode Knn</p>
 <ul class="simple">
 <li><p>Sederhana dan mudah diimplementasikan,Algoritma KNN adalah salah satu algoritma  paling sederhana dalam pembelajaran mesin.
 Konsep ini mudah dipahami dan relatif mudah diterapkan.</p></li>
@@ -2646,53 +2646,53 @@ Artinya suatu titik data mungkin merupakan outlier di satu area, namun normal di
 </ol>
 <p>K-jarak adalah jarak antara suatu titik, dan merupakan tetangga terdekat Kᵗʰ. Tetangga K yang dilambangkan dengan Nₖ(A) mencakup himpunan titik yang terletak di dalam atau pada lingkaran berjari-jari jarak K. K-tetangga bisa lebih dari atau sama dengan nilai K. Bagaimana mungkin?</p>
 <p>Kita akan melihat contohnya. Katakanlah kita mempunyai empat titik A, B, C, dan D (ditunjukkan di bawah).</p>
-<img src="image-20240320-202655.png" width="actual" align="" /><p>Jika K=2, K-tetangga A adalah C, B, dan D. Di sini, nilai K=2 tetapi ||N₂(A)|| = 3. Oleh karena itu, ||Nₖ(titik)|| akan selalu lebih besar atau sama dengan K.</p>
+<img src="gambar/gam2.png" width="actual" align="" /><p>Jika K=2, K-tetangga A adalah C, B, dan D. Di sini, nilai K=2 tetapi ||N₂(A)|| = 3. Oleh karena itu, ||Nₖ(titik)|| akan selalu lebih besar atau sama dengan K.</p>
 <ol class="arabic simple" start="2">
 <li><p>Reachability distance (RD)</p></li>
 </ol>
 <p>Dibawah ini didefinisikan sebagai jarak K maksimum Xj dan jarak antara Xi dan Xj. Ukuran jarak bersifat khusus untuk masalah (Euclidean, Manhattan, dll.)</p>
-<img src="image-20240320-203005.png" width="" align="" /><img src="image-20240320-203032.png" width="" align="" /><p>Dalam istilah awam, jika titik Xi terletak di dalam K-tetangga Xj, maka jarak jangkauannya adalah K-jarak Xj (garis biru), jika tidak, jarak jangkauannya adalah jarak antara Xi dan Xj (garis oranye).</p>
+<img src="gambar/gam3.png" width="" align="" /><img src="gambar/gam4.png" width="" align="" /><p>Dalam istilah awam, jika titik Xi terletak di dalam K-tetangga Xj, maka jarak jangkauannya adalah K-jarak Xj (garis biru), jika tidak, jarak jangkauannya adalah jarak antara Xi dan Xj (garis oranye).</p>
 <ol class="arabic simple" start="3">
 <li><p>Local reachability density (LRD)</p></li>
 </ol>
-<img src="image-20240320-203128.png" width="" align="" /><p>LRD merupakan kebalikan dari rata-rata jarak jangkauan A dari tetangganya. Secara intuitif berdasarkan rumus LRD, semakin besar jarak jangkauan rata-rata (yaitu, tetangga jauh dari titik tersebut), maka semakin sedikit kepadatan titik yang ada di sekitar titik tertentu. Ini menunjukkan seberapa jauh suatu titik dari kelompok titik terdekat.Nilai LRD yang rendah menunjukkan bahwa cluster terdekat berada jauh dari titik.</p>
+<img src="gambar/gam5.png" width="" align="" /><p>LRD merupakan kebalikan dari rata-rata jarak jangkauan A dari tetangganya. Secara intuitif berdasarkan rumus LRD, semakin besar jarak jangkauan rata-rata (yaitu, tetangga jauh dari titik tersebut), maka semakin sedikit kepadatan titik yang ada di sekitar titik tertentu. Ini menunjukkan seberapa jauh suatu titik dari kelompok titik terdekat.Nilai LRD yang rendah menunjukkan bahwa cluster terdekat berada jauh dari titik.</p>
 <ol class="arabic simple" start="4">
 <li><p>Local Outlier Factor (LOF)</p></li>
 </ol>
-<img src="image-20240320-203452.png" width="" align="" /><p>LRD tiap titik digunakan untuk membandingkan dengan rata-rata LRD K tetangganya. LOF adalah perbandingan rata-rata LRD K tetangga A terhadap LRD A.</p>
+<img src="gambar/gam6.png" width="" align="" /><p>LRD tiap titik digunakan untuk membandingkan dengan rata-rata LRD K tetangganya. LOF adalah perbandingan rata-rata LRD K tetangga A terhadap LRD A.</p>
 <p>Secara intuitif, jika suatu titik bukan merupakan pencilan (inlier), rasio rata-rata LRD tetangganya kira-kira sama dengan LRD suatu titik (karena kepadatan suatu titik dan tetangganya kira-kira sama). Dalam hal ini, LOF hampir sama dengan 1. Sebaliknya, jika suatu titik merupakan outlier, LRD suatu titik lebih kecil dari rata-rata LRD tetangganya. Maka nilai LOF akan tinggi.</p>
 <p>Umumnya jika LOF &gt; 1 maka dianggap outlier, namun hal tersebut tidak selalu benar. Katakanlah kita mengetahui bahwa kita hanya memiliki satu outlier dalam data, lalu kita ambil nilai LOF maksimum di antara semua nilai LOF, dan titik yang sesuai dengan nilai LOF maksimum akan dianggap sebagai outlier.</p>
 <p>Jika sudah memahami langkah konsep dari LOF maka kita langsung implementasikan membuat Data contoh data dengan tipe data numeric 3 fitur jumlah data 10. K = 3 atau jarak tetangga terdekat dari 10 objek. P = 2 Metode (Eclaudien Distance).</p>
-<img src="image-20240321-011351.png" width="50%" align="center" /><ol class="arabic simple">
+<img src="gambar/gam7.png" width="50%" align="center" /><ol class="arabic simple">
 <li><p>Menghitung jarak dan menentukan tetangga</p></li>
 </ol>
 <p>Selanjutnya untuk menghitung jarak, kita menggunakan Euclidean Distance. Untuk rumusnya yaitu :</p>
-<img src="image-20240320-225844.png" width="" align="" /><p>kita langsung implementasikan membuat Data contoh data dengan tipe data numeric 3 fitur jumlah data 10. K = 3 atau jarak tetangga terdekat dari 10 objek. Berikut hasil perhitungan nya dan sesdudah perhitungan dilakukan mengambil jarak K = 3 terdekat dari hasil perhitungan dibawah maka dipilih salah satu terdekat.</p>
-<img src="image-20240321-014525.png" width="" align="" /><ol class="arabic simple" start="2">
+<img src="gambar/gam8.png" width="" align="" /><p>kita langsung implementasikan membuat Data contoh data dengan tipe data numeric 3 fitur jumlah data 10. K = 3 atau jarak tetangga terdekat dari 10 objek. Berikut hasil perhitungan nya dan sesdudah perhitungan dilakukan mengambil jarak K = 3 terdekat dari hasil perhitungan dibawah maka dipilih salah satu terdekat.</p>
+<img src="gambar/gam9.png" width="" align="" /><ol class="arabic simple" start="2">
 <li><p>Menghitung Reachbility Distance (RD)</p></li>
 </ol>
 <p>Dalam langkah ini, kita akan menentukan berapa banyak objek yang masuk ke dalam ruang lingkup tetangga ke-n dari suatu objek. Secara matematis, kita akan mencari objek-objek yang memiliki jarak kurang dari atau sama dengan jarak tetangga ke-n dari objek yang kita pilih.</p>
 <p>Sebagai contoh, untuk objek a dengan jarak tetangga ke-3 sebesar 2,82843, objek lain yang masuk ke dalam lingkupnya adalah objek-objek yang memiliki jarak kurang dari atau sama dengan 2,82843. Dalam hal ini, objek-objek tersebut adalah {b, e, i}.</p>
 <p>Sekarang, mari kita lakukan langkah ini untuk objek-objek yang lain.</p>
-<img src="image-20240321-014613.png" width="" align="" /><p>Selanjutnya hitung Reachability Distance dari maring-masing objek, untuk rumusnya yaitu :</p>
-<img src="image-20240320-233307.png" width="" align="" /><p>Contoh dalam kasus objek a, kita telah menentukan bahwa objek tersebut memiliki tiga tetangga terdekat, yaitu {b, e, i}. Sekarang, kita akan menghitung nilai Reachability Distance untuk setiap objek dengan memilih nilai terbesar dari jarak tetangga ke-3 dari objek tersebut dengan jarak objek ke objek lainnya.</p>
+<img src="gambar/gam10.png" width="" align="" /><p>Selanjutnya hitung Reachability Distance dari maring-masing objek, untuk rumusnya yaitu :</p>
+<img src="gambar/gam11.png" width="" align="" /><p>Contoh dalam kasus objek a, kita telah menentukan bahwa objek tersebut memiliki tiga tetangga terdekat, yaitu {b, e, i}. Sekarang, kita akan menghitung nilai Reachability Distance untuk setiap objek dengan memilih nilai terbesar dari jarak tetangga ke-3 dari objek tersebut dengan jarak objek ke objek lainnya.</p>
 <p>Misalnya, untuk setiap objek dalam tetangga ke-3 objek a, kita akan menghitung jaraknya dari objek a. Kemudian, dari ketiga jarak tersebut, kita akan memilih nilai terbesar sebagai nilai Reachability Distance dari masing-masing objek tersebut.</p>
 <p>Dibawah ini kita lakukan proses keseluruhan objek.</p>
-<img src="image-20240321-014727.png" width="" align="" /><ol class="arabic simple" start="3">
+<img src="gambar/gam12.png" width="" align="" /><ol class="arabic simple" start="3">
 <li><p>Menghitung Local Reachability Distance (LRD)</p></li>
 </ol>
 <p>Pada tahap ini kita melakukan perhitungan Local Reachability Distance (LRD), LRD dirumuskan seperti di bawah ini :</p>
-<img src="image-20240321-014911.png" width="" align="" /><p>Berdasarkan rumus tersebut, Local Reachability Density (LRD) dapat dijelaskan sebagai hasil dari pembagian jumlah tetangga ke-n dari suatu objek dengan total Reachability Distance dari objek tersebut.</p>
+<img src="gambar/gam13.png" width="" align="" /><p>Berdasarkan rumus tersebut, Local Reachability Density (LRD) dapat dijelaskan sebagai hasil dari pembagian jumlah tetangga ke-n dari suatu objek dengan total Reachability Distance dari objek tersebut.</p>
 <p>Dalam perhitungan, kita akan menghitung jumlah tetangga ke-n dari setiap objek dan kemudian membaginya dengan total Reachability Distance dari objek tersebut. Ini memberikan gambaran tentang seberapa padatnya objek tersebut dalam konteks lokalnya.</p>
 <p>Jika dilakukan perhitungan untuk setiap objek, kita akan mendapatkan hasil LRD untuk setiap objek. LRD digunakan dalam proses deteksi outlier untuk menentukan seberapa anomali sebuah objek dalam konteks lokalnya. Semakin rendah nilai LRD, semakin tinggi kemungkinan objek tersebut merupakan outlier dalam dataset.</p>
-<img src="image-20240321-015103.png" width="" align="left" /><ol class="arabic simple" start="4">
+<img src="gambar/gam14.png" width="" align="left" /><ol class="arabic simple" start="4">
 <li><p>Menghitung Local Outlier Factor (LOF)</p></li>
 </ol>
 <p>Langkah terakhirnya kita tinggal menghitung Local Outlier Factor (LOF), dirumuskan sebagai berikut :</p>
-<img src="image-20240321-015429.png" width="" align="" /><p>Berdasarkan rumus tersebut, diketahui bahwa Local Outlier Factor (LOF) diperoleh dengan mengalikan nilai LRD (Local Reachability Density) dari suatu objek dengan total Reachability Distance dari objek tersebut.</p>
+<img src="gambar/gam15.png" width="" align="" /><p>Berdasarkan rumus tersebut, diketahui bahwa Local Outlier Factor (LOF) diperoleh dengan mengalikan nilai LRD (Local Reachability Density) dari suatu objek dengan total Reachability Distance dari objek tersebut.</p>
 <p>Dalam perhitungan, kita akan mengalikan nilai LRD dari setiap objek dengan jumlah Reachability Distance objek tersebut. Ini memberikan indikasi tentang seberapa anomali objek tersebut dalam konteks lokalnya, dengan mempertimbangkan kedua faktor tersebut.</p>
 <p>Jika dilakukan perhitungan untuk setiap objek, kita akan mendapatkan nilai LOF untuk setiap objek. LOF digunakan dalam deteksi outlier untuk menentukan seberapa signifikan anomali sebuah objek dalam dataset. Semakin tinggi nilai LOF, semakin besar kemungkinan objek tersebut merupakan outlier. Hasilnya pada gambar dibawah ini.</p>
-<img src="image-20240321-015610.png" width="actual" align="left" /><p>Dari hasil diatas bisa ditemukan bahwa nilai LOF f menyimpang dikarenakan perbedaan yang terlalu jauh dengan nilai objek yang lain, sehingga bisa kita simpulkan f adalah outlier.</p>
+<img src="gambar/gam16.png" width="actual" align="left" /><p>Dari hasil diatas bisa ditemukan bahwa nilai LOF f menyimpang dikarenakan perbedaan yang terlalu jauh dengan nilai objek yang lain, sehingga bisa kita simpulkan f adalah outlier.</p>
 </section>
 <section id="menghitung-menggunakan-python-scikit-learn">
 <h3>Menghitung menggunakan Python (Scikit-learn)<a class="headerlink" href="#menghitung-menggunakan-python-scikit-learn" title="Link to this heading">#</a></h3>
@@ -2894,7 +2894,7 @@ Negative LOF scores: [ 1.05894762  1.09539179  0.92787054  1.08088023  1.1297715
 <span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">pip install --upgrade pip</span>
 </pre></div>
 </div>
-<img alt="_images/d2d103957419ae958c05d601a4027a0ab2f674ad900498f330150c3c31330645.png" src="_images/d2d103957419ae958c05d601a4027a0ab2f674ad900498f330150c3c31330645.png" />
+<img alt="_images/d2d103957419ae958c05d601a4027a0ab2f674ad900498f330150c3c31330645.png" src="gambar/hasilgamoutlier.png" />
 </div>
 </div>
 <p>Berdasarkan hasil grafik tersebut, kita dapat mengidentifikasi outlier dengan warna merah. Jika kita melihat outlier yang ditandai sebagai warna merah di sumbu x yang berbeda dengan sumbu y, ini menunjukkan bahwa ketiga titik tersebut mungkin memiliki nilai yang sangat berbeda dari rata-rata atau mayoritas pada sumbu x. Namun, nilai mereka di sumbu y tidak selalu mengikuti pola yang sama.</p>
