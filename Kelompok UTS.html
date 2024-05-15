@@ -1,0 +1,1360 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1. Analisis Untuk mengetahui Kategori Kismis(Raisin) &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="assets/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="assets/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="assets/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="assets/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="assets/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="assets/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="assets/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="assets/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="assets/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="assets/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="assets/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="assets/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="assets/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="assets/documentation_options.js?v=9eb32ce0"></script>
+    <script src="assets/doctools.js?v=888ff710"></script>
+    <script src="assets/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="assets/clipboard.min.js?v=a7894cd8"></script>
+    <script src="assets/copybutton.js?v=f281be69"></script>
+    <script src="assets/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="assets/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="assets/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="assets/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Kelompok UTS';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="prev" title="Markdown Files" href="markdown.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="assets/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="assets/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FKelompok UTS.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Kelompok UTS.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>1. Analisis Untuk mengetahui Kategori Kismis(Raisin)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. Analisis Untuk mengetahui Kategori Kismis(Raisin)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-analisis-penyortiran-kategori-jenis-kismis-untuk-bisnis-industri">Tujuan Analisis Penyortiran Kategori Jenis Kismis Untuk Bisnis Industri:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-kismis">Apa Itu Kismis ?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding-memahami-data-kismis">2. Data Understanding / Memahami data kismis</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengumpulan-data">Pengumpulan Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-datasets">Mencari Datasets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-dan-menampilkan-datasets">Mengambil dan Menampilkan Datasets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#memahami-data">Memahami Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#korelasi-input-target">Korelasi input-target</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-mengetahui-detail-datasets-raisin">Explore / Mengetahui Detail Datasets Raisin</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jumlah-data-fitur-dan-tipe-data">Jumlah Data Fitur dan Tipe Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jumlah-data-dari-datasets-raisin">Jumlah Data Dari Datasets Raisin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jumlah-class-pada-data-kategori-setiap-class">Jumlah Class pada data / Kategori setiap Class</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-datasets">Deskripsi Datasets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-data">3.Preprocessing Data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-data">Identifikasi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-data-missing-values">1. Deteksi Data Missing Values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-data-outlier">2. Deteksi Data Outlier</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling">4. Modelling</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pemilihan-model">Pemilihan Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gaussian-naive-bayes-classification">GAUSSIAN NAIVE BAYES CLASSIFICATION</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-train-data-test">Membagi Data Train &amp; Data Test</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-train">Data Train</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-test">Data Test</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mendownload-data-train-test-untuk-perhitungan-manual">Mendownload Data Train &amp; Test untuk perhitungan manual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-data-train-yang-sudah-didownload-dalam-bentuk-csv">Hasil Data Train Yang Sudah Didownload dalam bentuk csv.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-train-diatas-dibagi-atau-difilter-untuk-membagi-classnya">Data Train diatas dibagi atau difilter untuk membagi Classnya.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-data-test-sejumlah-180-record">Hasil Data Test sejumlah 180 record</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#melakukan-perhitungan-klasifikasi-manual-diexcel">1. Melakukan Perhitungan Klasifikasi Manual DiExcel</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-probalitas-setiap-data-train">Menghitung Probalitas Setiap data Train</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lalu-menghitung-mean-dan-std-dari-setiap-fitur-dari-setiap-classnya">Lalu menghitung mean dan std dari setiap fitur dari setiap Classnya.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selanjutnya-menentukan-inputan-pada-fitur">Selanjutnya Menentukan Inputan pada fitur.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-sudah-selanjutnya-menghitung-distribusi-gaussian-setiap-fiturnya-pada-classnya">Jika sudah selanjutnya menghitung distribusi gaussian setiap fiturnya pada classnya.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-posteriori">Menghitung Posteriori</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-maximum-dari-nilai-posteriori">Menentukan Maximum dari nilai Posteriori.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#melakukan-prediksi-dengan-bantuan-sklearn-naive-bayes">2. Melakukan Prediksi dengan bantuan Sklearn Naive Bayes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akurasi-data">Hasil Akurasi Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan-hasil-analisis-klasifikasi">Kesimpulan Hasil Analisis Klasifikasi  :</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="analisis-untuk-mengetahui-kategori-kismis-raisin">
+<h1>1. Analisis Untuk mengetahui Kategori Kismis(Raisin)<a class="headerlink" href="#analisis-untuk-mengetahui-kategori-kismis-raisin" title="Link to this heading">#</a></h1>
+<img src="gambar/image-20240501-154910.png" width="" align="" /><section id="tujuan-analisis-penyortiran-kategori-jenis-kismis-untuk-bisnis-industri">
+<h2>Tujuan Analisis Penyortiran Kategori Jenis Kismis Untuk Bisnis Industri:<a class="headerlink" href="#tujuan-analisis-penyortiran-kategori-jenis-kismis-untuk-bisnis-industri" title="Link to this heading">#</a></h2>
+<p>Jadi Tujuan Dari Analisis ini bertujuan untuk pengembangan
+sistem penyortiran Industri makanan, terutama yang bergerak dalam produksi dan pengolahan kismis, sering menghadapi tantangan dalam identifikasi dan pemisahan kategori kismis. Proses manual yang sebelumnya digunakan seringkali memakan waktu, mahal, dan tidak sepenuhnya akurat. Selain itu, kualitas hasil identifikasi dapat bervariasi bergantung pada tingkat keahlian dan pengalaman personel yang terlibat.</p>
+</section>
+<section id="apa-itu-kismis">
+<h2>Apa Itu Kismis ?<a class="headerlink" href="#apa-itu-kismis" title="Link to this heading">#</a></h2>
+<p>Sebelum kita masuk proses selanjutnya kita harus mengenal apa itu kismis. Kismis adalah buah kering yang dihasilkan dari pengeringan anggur, khususnya varietas anggur beri yang kecil dan manis. Proses pembuatan kismis melibatkan pengeringan anggur segar, yang kemudian menghasilkan buah yang kecil, manis, dan berwarna gelap. Kismis sering digunakan sebagai camilan atau bahan tambahan dalam berbagai resep makanan dan minuman, karena memiliki rasa manis alami dan tekstur yang kenyal.</p>
+<p>Pengeringan merupakan metode pengawetan buah yang lama dan hemat biaya. Proses pengeringan anggur agar dapat menjadi kismis dapat dilakukan dengan beberapa cara, seperti pengeringan di pohon, pengeringan terbuka, pengeringan dalam ruang terkendali, dan pengeringan dalam gudang. Proses pengeringan ini dipengaruhi oleh faktor-faktor seperti variasi anggur, usia anggur, kondisi tanah dan iklim, manajemen pertanian, dan lain-lain. Semua faktor ini berkontribusi pada kualitas akhir produk anggur. Selain itu, parameter fisik dan kimia dari anggur yang baru dipanen juga mempengaruhi kualitas kismis yang dihasilkan. Kualitas mikrobiologis juga merupakan hal penting dalam menciptakan produk anggur yang sehat. Hal” tersebut dapat kita gunakan juga untuk mengetahui kategori kismis nantinya.</p>
+<p>Kismis merupakan produk makanan dari anggur
+yang dikeringkan. Selama pengeringan anggur,
+kandungan air akan berkurang 75% hingga di bawah
+15% (Zoffoli &amp; Latorre, 2011). Warna akhir dan
+kualitas dari kismis akan bergantung pada varietas
+dari anggur serta metode pengeringan yang
+digunakan (Thompson, 2000).</p>
+<p>Terdapat berbagai metode untuk menilai kualitas
+dari kismis. Di antaranya adalah metode tradisional
+yang dilakukan secara manual oleh manusia. Akan
+tetapi, metode tradisional cenderung memakan waktu
+yang lama dan berpotensi terjadinya human error.
+Untuk mengatasi hal tersebut, berbagai peneliti
+kemudian mengembangkan metode alternatif untuk mengevaluasi kualitas kismis dengan machine vision
+system (Mollazade et al., 2012; Karimi et al., 2017;
+Cinar et al., 2020). Pengembangan metode ini
+diharapkan dapat menjadi dasar pengembangan
+sistem penyortiran kismis untuk meningkatkan
+efisiensi di industri. Dibawah ini Gambar dari  machine vision
+system.</p>
+<img src="./gambar/image-20240512-211828.png" width="50%" align="" /><p>Referensi Sumber Penjelasan : <a class="reference external" href="https://dergipark.org.tr/tr/download/article-file/1227592">https://dergipark.org.tr/tr/download/article-file/1227592</a></p>
+<p>Setelah Memahami dan mengerti Kismis itu apa mulai dari darimana asalnya, cara mengolahnya sampai bisa digunakan untuk apa aja buah kismis ini. Kita langsung ketahap Data Understanding atau memahami datasets kismis untuk proses klasifikasi.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-understanding-memahami-data-kismis">
+<h1>2. Data Understanding / Memahami data kismis<a class="headerlink" href="#data-understanding-memahami-data-kismis" title="Link to this heading">#</a></h1>
+<p>Data understanding adalah salah satu tahapan dalam proses analisis data yang bertujuan untuk memahami data yang akan diolah sebelum langkah-langkah analisis lebih lanjut dilakukan. Dalam tahap ini, fokus utamanya adalah untuk mengumpulkan informasi tentang data, mengeksplorasi karakteristiknya, dan memahami konteksnya. Pada Analisis kali ini case kita yakni memahami datasets Raisin namun sebelumnya kita harus mengambil datasets dulu supaya data itu pasti apa yang akan kita pahami dan lakukan proses klasifikasi.</p>
+<section id="pengumpulan-data">
+<h2>Pengumpulan Data<a class="headerlink" href="#pengumpulan-data" title="Link to this heading">#</a></h2>
+<section id="mencari-datasets">
+<h3>Mencari Datasets<a class="headerlink" href="#mencari-datasets" title="Link to this heading">#</a></h3>
+<p>Langkah pertama pada pegumpulan data adalah dengan mencari dataset yang akan kita gunakan, sesuai penjelasan di atas kita akan menggunakan Dataset Raisin yang bersumber dari UCI Datasets :</p>
+<p>Sumber Datasets Raisin : <a class="reference external" href="https://archive.ics.uci.edu/dataset/850/raisin">https://archive.ics.uci.edu/dataset/850/raisin</a></p>
+</section>
+<section id="mengambil-dan-menampilkan-datasets">
+<h3>Mengambil dan Menampilkan Datasets<a class="headerlink" href="#mengambil-dan-menampilkan-datasets" title="Link to this heading">#</a></h3>
+<p>Setelah menentukan Datasets langkah selanjutnya yakni menampilkan atau mengambil datasets tersebut.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>ucimlrepo
+<span class="kn">from</span> <span class="nn">ucimlrepo</span> <span class="kn">import</span> <span class="n">fetch_ucirepo</span> 
+  
+<span class="c1"># fetch dataset </span>
+<span class="n">raisin</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">850</span><span class="p">)</span> 
+
+<span class="c1"># data (as pandas dataframes) </span>
+<span class="n">raisin_fitur</span><span class="o">=</span><span class="n">raisin</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">features</span>
+<span class="n">raisin_class</span><span class="o">=</span><span class="n">raisin</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">targets</span>
+
+<span class="n">df_raisin</span><span class="o">=</span><span class="n">raisin_fitur</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">raisin_class</span><span class="p">)</span>
+
+<span class="n">df_raisin</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;raisin.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1">#variable features</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_raisin</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting ucimlrepo
+  Downloading ucimlrepo-0.0.6-py3-none-any.whl.metadata (5.3 kB)
+Downloading ucimlrepo-0.0.6-py3-none-any.whl (8.0 kB)
+Installing collected packages: ucimlrepo
+Successfully installed ucimlrepo-0.0.6
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;pip install ucimlrepo&#39;</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">ucimlrepo</span> <span class="kn">import</span> <span class="n">fetch_ucirepo</span> 
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># fetch dataset </span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">raisin</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">850</span><span class="p">)</span> 
+
+<span class="n">File</span> <span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Programs</span>\<span class="n">Python</span>\<span class="n">Python312</span>\<span class="n">Lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">ucimlrepo</span>\<span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">ucimlrepo.fetch</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">File</span> <span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Programs</span>\<span class="n">Python</span>\<span class="n">Python312</span>\<span class="n">Lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">ucimlrepo</span>\<span class="n">fetch</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">json</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">urllib.request</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Jadi, kode tersebut digunakan untuk mengambil dataset “Raisin” dari UCI Machine Learning Repository, memisahkan fitur-fiturnya dan target variabelnya, menggabungkannya menjadi satu DataFrame, menyimpan DataFrame tersebut ke dalam file CSV, dan mencetak DataFrame tersebut. Data diatas akan kita gunakan untuk Analisis Kasus kali ini, maka sebelum kita melakukan proses selanjutnya kita harus memahami datasets tersebut untuk klasifikasi kategori dari kismis.</p>
+</section>
+<section id="memahami-data">
+<h3>Memahami Data<a class="headerlink" href="#memahami-data" title="Link to this heading">#</a></h3>
+<p>Deskripsi Penjelasan datasets, Pada Dataset ini menjelaskan bahwa kismis adalah buah kering yang dihasilkan dari pengeringan anggur, khususnya varietas anggur beri yang kecil dan manis. Proses pembuatan kismis melibatkan pengeringan anggur segar, yang kemudian menghasilkan buah yang kecil, manis, dan berwarna gelap. Kismis sering digunakan sebagai camilan atau bahan tambahan dalam berbagai resep makanan dan minuman, karena memiliki rasa manis alami dan tekstur yang kenyal. Studi kasus kali ini untuk mengetahui jenis Kismis yang ada dalam data yang kita ambil dari data uci repository. Data yang kita gunakan yaitu ada 7 fitur yaitu : Area, MajorAxisLength, MinorAxisLength, Eccentricity, ConvexArea, Extent, Perimeter dan 2 kelas yaitu Kecimen dan Besni. Setiap fitur dari data tersebut memiliki 900 data, 450 yaitu termasuk kelas kecimen dan 450 kelas besni. Data tidak memiliki missing values tapi memiliki Outlier sebanyak 207. Berikut penjelasan tentang fitur pada data raisin ini.</p>
+<p>Penjelasan Fitur :</p>
+<p>Area:
+Deskripsi: Jumlah piksel yang terdapat di dalam batas-batas raisin.
+Tipe Data: Numerik.
+Ukuran: Satuan piksel persegi.</p>
+<p>MajorAxisLength:
+Deskripsi: Panjang sumbu utama yaitu garis terpanjang yang dapat ditarik pada kismis.
+Tipe Data: Numerik (continues)
+Ukuran: Satuan piksel.</p>
+<p>MinorAxisLength:
+Deskripsi: Panjang sumbu kecil yang merupakan garis terpendek yang dapat ditarik pada kismis.</p>
+<p>Tipe Data: Numerik (Continue)
+Ukuran: Satuan piksel.</p>
+<p>Eccentricity:
+Deskripsi: Eksentrisitas, Ukuran eksentrisitas elips yang memiliki momen yang sama dengan kismis.</p>
+<p>Tipe Data: Numerik, di antara 0 dan 1, di mana nilai 0 menunjukkan elips sempurna dan nilai mendekati 1 menunjukkan elips yang sangat memanjang.
+Ukuran: Tidak memiliki satuan karena merupakan perbandingan.</p>
+<p>ConvexArea:
+Deskripsi: Luas daerah raisin yang melingkupi bentuk kismis secara konveks.</p>
+<p>Tipe Data: Numerik.
+Ukuran: Satuan piksel persegi.</p>
+<p>Extent:
+Deskripsi: Rasio luas kismis terhadap luas persegi yang melingkupinya.</p>
+<p>Tipe Data: Numerik (Continuous)
+Ukuran: Tidak memiliki satuan karena merupakan perbandingan.</p>
+<p>Perimeter:
+Deskripsi: Panjang keliling kismis.
+Tipe Data: Numerik (Continuous)
+Ukuran: Tidak memiliki satuan karena merupakan perbandingan.</p>
+<p>Class: Kelas target dari raisin, yaitu jenis Kecimen atau Besni.
+Tipe Data: Categorical</p>
+<p>Perbedaan 2 Kategori Kismis :</p>
+<p>Kismis Kecimen: Kismis kecimen umumnya lebih kecil dan lebih padat dibandingkan dengan kismis besni. Mereka biasanya memiliki ukuran sekitar 0,5 cm hingga 1 cm dalam diameter.</p>
+<p>Kismis Besni: Kismis besni cenderung lebih besar dan lebih berair daripada kismis kecimen. Ukurannya bisa bervariasi dari sekitar 1 cm hingga lebih dari 2 cm dalam diameter.</p>
+</section>
+<section id="korelasi-input-target">
+<h3>Korelasi input-target<a class="headerlink" href="#korelasi-input-target" title="Link to this heading">#</a></h3>
+<p>Korelasi input-target mungkin menunjukkan kepada kita faktor-faktor apa yang lebih berpengaruh.</p>
+<img src="gambar/image-20240512-224532.png" width="50%" align="left" /><img src="gambar/image-20240515-205341.png" width="50%" align="left" /><p>Dari grafik di atas, kita dapat melihat bahwa semua fitur memiliki pengaruh yang signifikan kecuali ‘Luas’ (Extent) dibandingkan dengan yang lain.</p>
+</section>
+</section>
+<section id="explore-mengetahui-detail-datasets-raisin">
+<h2>Explore / Mengetahui Detail Datasets Raisin<a class="headerlink" href="#explore-mengetahui-detail-datasets-raisin" title="Link to this heading">#</a></h2>
+<p>Setelah kita menampilkan data dan mengetahui Penjelasan dari pemahaman fitur dari datasets tersebut kiti bisa menampilkan Lebih secara rinci informasi atau pemahaman dari dataset Raisin tersebut. selanjutnya untuk memahami dan mengetahui lebih dalam, kita detail kan untuk Spesifikasi atau fitur dan Class yang ada pada datasets, seperti mengetahui tipe data nya, mengetahui jumlah data nya, jumlah fitur dan classnya. Dibawah ini adalah Spesifikasi Detail dari datasets.</p>
+<section id="jumlah-data-fitur-dan-tipe-data">
+<h3>Jumlah Data Fitur dan Tipe Data<a class="headerlink" href="#jumlah-data-fitur-dan-tipe-data" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_raisin</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 900 entries, 0 to 899
+Data columns (total 8 columns):
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   Area             900 non-null    int64  
+ 1   MajorAxisLength  900 non-null    float64
+ 2   MinorAxisLength  900 non-null    float64
+ 3   Eccentricity     900 non-null    float64
+ 4   ConvexArea       900 non-null    int64  
+ 5   Extent           900 non-null    float64
+ 6   Perimeter        900 non-null    float64
+ 7   Class            900 non-null    object 
+dtypes: float64(5), int64(2), object(1)
+memory usage: 56.4+ KB
+</pre></div>
+</div>
+</div>
+</div>
+<p>Bisa kita ketahui dari hasil output code tersebut dalam datasets terdapat 900 data masing-masing 7 Features dan 1 Class disana juga mengecek tipedata dari setiap Kolom atau fiturnya.</p>
+</section>
+<section id="jumlah-data-dari-datasets-raisin">
+<h3>Jumlah Data Dari Datasets Raisin<a class="headerlink" href="#jumlah-data-dari-datasets-raisin" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_data</span> <span class="o">=</span> <span class="n">df_raisin</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah data dalam dataset Raisin:&quot;</span><span class="p">,</span> <span class="n">num_data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jumlah data dalam dataset Raisin: 900
+</pre></div>
+</div>
+</div>
+</div>
+<p>Diatas sudah bisa kita ketahui bahwa datasets record nya sebanyak 900 data.</p>
+</section>
+<section id="jumlah-class-pada-data-kategori-setiap-class">
+<h3>Jumlah Class pada data / Kategori setiap Class<a class="headerlink" href="#jumlah-class-pada-data-kategori-setiap-class" title="Link to this heading">#</a></h3>
+<p>Jadi kita melakukan pengecekan terhadap data Raisin berpakah masingmasing Class atau kategori dari 2 Kategori yakni Kecimen dan Besni. Dibawah ini adalah code untuk menampilkannya.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_raisin</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Class&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Class
+Besni      450
+Kecimen    450
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Seperti hasil output diatas menghasilkan masing-masing Class Kategorinya menghasilkan data yang seimbang yakni 450 data per Kategorinya.</p>
+<ol class="arabic simple">
+<li><p>Besni = 450 Data Record .</p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>Kecimen = 450 Data Record.</p></li>
+</ol>
+</section>
+<section id="deskripsi-datasets">
+<h3>Deskripsi Datasets<a class="headerlink" href="#deskripsi-datasets" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Deskripsi Dari Datasets Raisin</span>
+<span class="n">des</span> <span class="o">=</span> <span class="n">df_raisin</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Deskripsi Data Raisin:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">des</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Deskripsi Data Raisin:
+                Area  MajorAxisLength  MinorAxisLength  Eccentricity  \
+count     900.000000       900.000000       900.000000    900.000000   
+mean    87804.127778       430.929950       254.488133      0.781542   
+std     39002.111390       116.035121        49.988902      0.090318   
+min     25387.000000       225.629541       143.710872      0.348730   
+25%     59348.000000       345.442898       219.111126      0.741766   
+50%     78902.000000       407.803951       247.848409      0.798846   
+75%    105028.250000       494.187014       279.888575      0.842571   
+max    235047.000000       997.291941       492.275279      0.962124   
+
+          ConvexArea      Extent    Perimeter  
+count     900.000000  900.000000   900.000000  
+mean    91186.090000    0.699508  1165.906636  
+std     40769.290132    0.053468   273.764315  
+min     26139.000000    0.379856   619.074000  
+25%     61513.250000    0.670869   966.410750  
+50%     81651.000000    0.707367  1119.509000  
+75%    108375.750000    0.734991  1308.389750  
+max    278217.000000    0.835455  2697.753000  
+</pre></div>
+</div>
+</div>
+</div>
+<p>Kode diatas Menunjukkan deskripsi atau  rangkuman statistik deskriptif dari DataFrame dibawah ini penjelasan detailnya :</p>
+<ol class="arabic simple">
+<li><p>Count: Menunjukkan jumlah entri non-null di setiap kolom. Dalam hal ini, terdapat 900 entri untuk setiap kolom.</p></li>
+<li><p>Mean: Merupakan nilai rata-rata dari setiap kolom. Misalnya, rata-rata kolom pertama adalah 87804.127778, kolom kedua adalah 430.929950, dan seterusnya.</p></li>
+<li><p>Std (Standard Deviation): Menunjukkan seberapa jauh data tersebar dari nilai rata-rata. Standar deviasi yang lebih tinggi menunjukkan variabilitas yang lebih besar dalam data. Semakin kecil nilainya, semakin dekat data dengan nilai rata-rata.</p></li>
+<li><p>Min (Minimum): Nilai minimum dalam setiap kolom. Ini adalah nilai terkecil dalam data.</p></li>
+<li><p>25th Percentile (Q1): Nilai yang membagi data menjadi dua bagian. Sebanyak 25% data berada di bawah nilai ini. Juga dikenal sebagai kuartil pertama.</p></li>
+<li><p>50th Percentile (Median/Q2): Nilai yang membagi data menjadi dua bagian yang sama besar. Juga dikenal sebagai median atau kuartil kedua.</p></li>
+<li><p>75th Percentile (Q3): Nilai yang membagi data menjadi dua bagian. Sebanyak 75% data berada di bawah nilai ini. Juga dikenal sebagai kuartil ketiga.</p></li>
+<li><p>Max (Maximum): Nilai maksimum dalam setiap kolom. Ini adalah nilai terbesar dalam data.</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="preprocessing-data">
+<h1>3.Preprocessing Data<a class="headerlink" href="#preprocessing-data" title="Link to this heading">#</a></h1>
+<p>Pada proses klasifikasi perlu dilakukan
+pengolahan data awal terlebih dahulu atau biasa
+disebut preprocessing data. Pada preprocessing data
+dilakukan beberapa tahap, yang pertama adalah mendeteksi missing value dan diketahui
+pada dataset tidak terdapat data yang kosong. Kemudian tahap berikutnya adalah
+mendeteksi outlier. Meskipun terdeteksi adanya
+outlier namun model dianggap dapat
+mengakomodasinya sehingga outlier tidak
+dihilangkan.</p>
+<p>Preprocessing data adalah proses persiapan dan pembersihan data yang mentah sebelum data tersebut digunakan oleh kita untuk analisis atau pembuatan model dalam machine learning atau data mining. Tujuan utama dari preprocessing data adalah untuk memastikan bahwa data yang digunakan untuk analisis atau pemodelan adalah berkualitas tinggi, konsisten, dan sesuai dengan kebutuhan analisis yang akan dilakukan. Berikut adalah beberapa tahapan umum dalam preprocessing data:</p>
+<section id="identifikasi-data">
+<h2>Identifikasi Data<a class="headerlink" href="#identifikasi-data" title="Link to this heading">#</a></h2>
+<p>Identifikasi data ada beberapa tahap yakni mulai dari pengecekan atau deteksi data tersebut apakah terdapat Missing Value, dan Outlier. Jika terdapat missing value kita juga dapat melakukan proses imputasi data yang null atau missing dengan beberapa metode yakni metode Knn dan Mean. Lalu Tahap selanjutnya kita melakukan Deteksi Outlier jika terdapat data outlier yang terlalu jauh. Meskipun terdeteksi adanya
+outlier namun model dianggap dapat
+mengakomodasinya sehingga outlier tidak
+dihilangkan. Maka dibawah ini urutan tahapan Preprocessing Data :</p>
+<ol class="arabic simple">
+<li><p>Deteksi Data Missing Values</p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>Deteksi Data Outlier</p></li>
+</ol>
+<section id="deteksi-data-missing-values">
+<h3>1. Deteksi Data Missing Values<a class="headerlink" href="#deteksi-data-missing-values" title="Link to this heading">#</a></h3>
+<p>Code dibawah ini melakukan pengecekan apakah terdapat data missing values dan dimunculkan jumlahnya masing-masing disetiap fiturnya.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Melakukan pengecekan apakah terdapat missing value dalam setiap kolom</span>
+<span class="n">missing_val</span> <span class="o">=</span> <span class="n">df_raisin</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1"># Menampilkan berapa jumlah adanya missing value untuk setiap kolomnya</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah nilai yang hilang untuk setiap kolom:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">missing_val</span><span class="p">)</span>
+
+<span class="c1"># Melakukan pengecekan apakah ada nilai null atau missing value</span>
+<span class="k">if</span> <span class="n">missing_val</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tidak ada missing value.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Terdapat missing value dalam dataset.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jumlah nilai yang hilang untuk setiap kolom:
+Area               0
+MajorAxisLength    0
+MinorAxisLength    0
+Eccentricity       0
+ConvexArea         0
+Extent             0
+Perimeter          0
+Class              0
+dtype: int64
+Tidak ada missing value.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Dari hasil pengecekan data diatas dapat kita simpulkan bahwasannya tidak terdapat adanya missing value pada data (Raisin). Maka dari hasil tersebut kita tidak perliu melakukan Proses imputasi data missing value.</p>
+</section>
+<section id="deteksi-data-outlier">
+<h3>2. Deteksi Data Outlier<a class="headerlink" href="#deteksi-data-outlier" title="Link to this heading">#</a></h3>
+<p>Code dibawah ini melakukan pengecekan apakah terdapat data outlier dan dimunculkan jumlahnya masing-masing di setiap fiturnya.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Mendefinisikan kolom-kolom yang ingin diamati</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Area&#39;</span><span class="p">,</span> <span class="s1">&#39;MajorAxisLength&#39;</span><span class="p">,</span> <span class="s1">&#39;MinorAxisLength&#39;</span><span class="p">,</span> <span class="s1">&#39;Eccentricity&#39;</span><span class="p">,</span> <span class="s1">&#39;ConvexArea&#39;</span><span class="p">,</span> <span class="s1">&#39;Extent&#39;</span><span class="p">,</span> <span class="s1">&#39;Perimeter&#39;</span><span class="p">]</span>
+
+<span class="c1"># Menghitung IQR untuk setiap kolomnya</span>
+<span class="n">Q1</span> <span class="o">=</span> <span class="n">df_raisin</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span>
+<span class="n">Q3</span> <span class="o">=</span> <span class="n">df_raisin</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+<span class="n">IQR</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">-</span> <span class="n">Q1</span>
+
+<span class="c1"># Menentukan ambang outlier</span>
+<span class="n">outlier_threshold</span> <span class="o">=</span> <span class="mf">1.5</span>
+
+<span class="c1"># Identifikasi outlier di setiap kolomnya</span>
+<span class="n">outliers</span> <span class="o">=</span> <span class="p">((</span><span class="n">df_raisin</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">Q1</span> <span class="o">-</span> <span class="n">outlier_threshold</span> <span class="o">*</span> <span class="n">IQR</span><span class="p">))</span> <span class="o">|</span> <span class="p">(</span><span class="n">df_raisin</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span> <span class="o">&gt;</span> <span class="p">(</span><span class="n">Q3</span> <span class="o">+</span> <span class="n">outlier_threshold</span> <span class="o">*</span> <span class="n">IQR</span><span class="p">)))</span>
+
+<span class="c1"># Menghitung jumlah outlier di setiap kolom</span>
+<span class="n">num_outliers</span> <span class="o">=</span> <span class="n">outliers</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1"># Buat boxplot untuk setiap kolom dengan outlier</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">columns</span><span class="p">),</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="c1"># Iterasi setiap kolom dan plot boxplot</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">column</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">columns</span><span class="p">):</span>
+    <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">df_raisin</span><span class="p">[</span><span class="n">column</span><span class="p">])</span>
+    <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">column</span><span class="p">)</span>
+    <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Column&#39;</span><span class="p">)</span>
+    <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Value&#39;</span><span class="p">)</span>
+    <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.85</span><span class="p">,</span> <span class="mf">0.85</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;Outliers: </span><span class="si">{</span><span class="n">num_outliers</span><span class="p">[</span><span class="n">column</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Tampilkan jumlah outlier di setiap kolom</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jumlah Data Outlier Setiap Kolom Fiturnya:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num_outliers</span><span class="p">)</span>
+<span class="n">total_outliers</span> <span class="o">=</span> <span class="n">num_outliers</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total Jumlah Data Outlier:&quot;</span><span class="p">,</span> <span class="n">total_outliers</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/db65ce3c51f5c3ca1f1880ff69b1c2abec7029baaa505dc8f1be5f6d052c7e67.png" src="_images/db65ce3c51f5c3ca1f1880ff69b1c2abec7029baaa505dc8f1be5f6d052c7e67.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Jumlah Data Outlier Setiap Kolom Fiturnya:
+Area               41
+MajorAxisLength    17
+MinorAxisLength    26
+Eccentricity       43
+ConvexArea         42
+Extent             21
+Perimeter          17
+dtype: int64
+Total Jumlah Data Outlier: 207
+</pre></div>
+</div>
+</div>
+</div>
+<p>Pada Kode diatas mengahasilkan output data Outlier sejumlah 207 data dari semua kolom fitur datasets. Namun Meskipun terdeteksi adanya
+outlier namun model dianggap dapat
+mengakomodasinya sehingga outlier tidak
+dihilangkan. Jadi kita tidak perlu melakukan penghapusan data Outlier kita langsung ke proses Modelling. Setelah melakukan proses Preprocecing kita langsung ke Metode Modelling Yakni Gaussian Naives Bayes.</p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="modelling">
+<h1>4. Modelling<a class="headerlink" href="#modelling" title="Link to this heading">#</a></h1>
+<p>Proses modelling dalam analisis data adalah langkah penting di mana Anda menggunakan berbagai teknik statistik atau algoritma machine learning untuk memahami, menganalisis, dan/atau memprediksi pola dalam data. Dikarenakan dalam Case Datasets Raisin ini tujuannya untuk menentukan kategori dari pengelompokan jenis kismis jadi tentunya kita menggunakan Metode Klasifikasi.</p>
+<section id="pemilihan-model">
+<h2>Pemilihan Model<a class="headerlink" href="#pemilihan-model" title="Link to this heading">#</a></h2>
+<p>Metode Klasifikasi adalah teknik dalam analisis data yang digunakan untuk memisahkan atau mengelompokkan data ke dalam kategori atau kelas berdasarkan atribut-atribut yang ada. Tujuannya adalah untuk membangun model yang dapat memprediksi kelas atau label dari data yang tidak terlihat sebelumnya berdasarkan fitur-fitur yang diamati. Disini kita menggunakan Metode Klasifikasi Naive Bayes dikarenakan cocok digunakan untuk klasifikasi teks dan memiliki kinerja yang baik dalam dataset dengan dimensi tinggi. Kita Langsung saja Implementasikan.</p>
+</section>
+<section id="gaussian-naive-bayes-classification">
+<h2>GAUSSIAN NAIVE BAYES CLASSIFICATION<a class="headerlink" href="#gaussian-naive-bayes-classification" title="Link to this heading">#</a></h2>
+<p>Gaussian Naive Bayes merupakan sebuah teknik klasifikasi yang digunakan dalam machine learning dengan menggunakan metode probability dan Distribusi Gaussian atau Distiribusi Normal. Gaussian Distribution mengasumsikan bahwa setiap feature pada data memiliki penngaruh yang independent dalam memprediksi target. Kombinasi prediksi dari seluruh parameter adalah prediksi akhir dengan probability dari target variable yang diklasifikasikan ke dalam dua kelas. Klasifikasi akhirnya adalah hasil probability yang lebih tinggi dari grup target maka itu adalah kelas dari suatu data.</p>
+<section id="membagi-data-train-data-test">
+<h3>Membagi Data Train &amp; Data Test<a class="headerlink" href="#membagi-data-train-data-test" title="Link to this heading">#</a></h3>
+<p>Dalam perbandingan studi kasus kita membagi datanya 80% Data Train sedangkan Data Testnya 20%. Hal ini dilakukan agar saat kita melakukan prediksi terhadap data baru, kita mendapat hasil yang lebih efektif. Dan apakah hasil tersebut tepat maka kita langsung saja membagi data tersebut lalu melakukan proses klasifikasi dengan 2 metode untuk membuktikannya yakni Perhitungan Manual dan Dari Prediksi dengan bantuan Sklearn Modelling Naives Bayes.</p>
+</section>
+<section id="data-train">
+<h3>Data Train<a class="headerlink" href="#data-train" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">df_raisin</span><span class="p">[[</span><span class="s1">&#39;Area&#39;</span><span class="p">,</span> <span class="s1">&#39;MajorAxisLength&#39;</span><span class="p">,</span> <span class="s1">&#39;MinorAxisLength&#39;</span><span class="p">,</span> <span class="s1">&#39;Eccentricity&#39;</span><span class="p">,</span><span class="s1">&#39;ConvexArea&#39;</span><span class="p">,</span><span class="s1">&#39;Extent&#39;</span><span class="p">,</span><span class="s1">&#39;Perimeter&#39;</span> <span class="p">]]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_raisin</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span>
+<span class="c1"># Membagi dataset menjadi data latih &amp; data uji</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+
+<span class="n">trained</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
+<span class="n">trained</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;Raisin_train.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">trained</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       Area  MajorAxisLength  MinorAxisLength  Eccentricity  ConvexArea  \
+514  166275       602.307775       356.236287      0.806340      168292   
+207   61377       339.733497       234.024237      0.724907       64027   
+305   61730       376.188557       210.611522      0.828590       63756   
+425   85954       405.915167       272.083325      0.742094       87690   
+364   73972       359.272692       263.333390      0.680269       75353   
+..      ...              ...              ...           ...         ...   
+256   61463       369.399745       213.619620      0.815832       63117   
+104   59459       347.155155       222.109478      0.768542       61585   
+839   68510       348.400952       252.993004      0.687531       70513   
+634  169645       731.561876       299.413405      0.912409      174278   
+410   59654       350.899954       219.489868      0.780220       62384   
+
+       Extent  Perimeter    Class  
+514  0.719282   1580.961    Besni  
+207  0.705613    975.553  Kecimen  
+305  0.632188    989.499  Kecimen  
+425  0.714818   1104.717  Kecimen  
+364  0.754739   1017.749  Kecimen  
+..        ...        ...      ...  
+256  0.786777    966.493  Kecimen  
+104  0.709619    966.329  Kecimen  
+839  0.670877   1028.839    Besni  
+634  0.755516   1753.016    Besni  
+410  0.713053    979.727  Kecimen  
+
+[720 rows x 8 columns]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hasil diatas total data Train yakni 720 record.</p>
+</section>
+<section id="data-test">
+<h3>Data Test<a class="headerlink" href="#data-test" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;Raisin_test.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       Area  MajorAxisLength  MinorAxisLength  Eccentricity  ConvexArea  \
+530   90559       473.575846       246.919968      0.853316       95477   
+348   87149       444.610836       253.206591      0.821990       91704   
+684   88257       452.924593       254.482193      0.827229       92886   
+813  152611       663.133250       297.417950      0.893781      158488   
+142   73125       408.940773       231.219001      0.824810       75540   
+..      ...              ...              ...           ...         ...   
+881  150420       607.709674       316.809724      0.853363      153905   
+403   91764       433.768160       270.286095      0.782133       93480   
+333   60313       339.603456       227.725924      0.741851       62130   
+783  102960       522.381048       252.365430      0.875562      105956   
+598   89236       389.681692       295.331936      0.652394       92014   
+
+       Extent  Perimeter    Class  
+530  0.673231   1328.744    Besni  
+348  0.716221   1189.483  Kecimen  
+684  0.736088   1209.622    Besni  
+813  0.614715   1755.968    Besni  
+142  0.656513   1096.751  Kecimen  
+..        ...        ...      ...  
+881  0.642409   1557.266    Besni  
+403  0.692925   1165.084  Kecimen  
+333  0.726680    946.487  Kecimen  
+783  0.741659   1311.161    Besni  
+598  0.696993   1144.036    Besni  
+
+[180 rows x 8 columns]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hasil diatas total data Test yakni 180 record.</p>
+</section>
+<section id="mendownload-data-train-test-untuk-perhitungan-manual">
+<h3>Mendownload Data Train &amp; Test untuk perhitungan manual<a class="headerlink" href="#mendownload-data-train-test-untuk-perhitungan-manual" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>mysql-connector-python
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">mysql.connector</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+
+<span class="c1"># koneksi ke database MySQL</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">mysql</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="s2">&quot;database2-adisahrulramadhan22072.a.aivencloud.com&quot;</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="s2">&quot;avnadmin&quot;</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="s2">&quot;AVNS_o9Uf-iAsqNySoqOtmNf&quot;</span><span class="p">,</span>
+    <span class="n">port</span> <span class="o">=</span> <span class="s2">&quot;23413&quot;</span><span class="p">,</span>
+    <span class="n">database</span><span class="o">=</span><span class="s2">&quot;db_mysql&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># Membaca data dari database menggunakan Pandas</span>
+<span class="n">sql_query</span> <span class="o">=</span> <span class="s2">&quot;SELECT * FROM RaisinNaives&quot;</span>
+<span class="n">data_raisin</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
+
+<span class="c1"># Menghapus kolom Id, dikarenakan kurang relevan</span>
+<span class="n">data_raisin</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;Id&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># memisahkan atribut dan label</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">data_raisin</span><span class="p">[[</span><span class="s1">&#39;Area&#39;</span><span class="p">,</span> <span class="s1">&#39;MajorAxisLength&#39;</span><span class="p">,</span> <span class="s1">&#39;MinorAxisLength&#39;</span><span class="p">,</span> <span class="s1">&#39;Eccentricity&#39;</span><span class="p">,</span><span class="s1">&#39;ConvexArea&#39;</span><span class="p">,</span><span class="s1">&#39;Extent&#39;</span><span class="p">,</span><span class="s1">&#39;Perimeter&#39;</span> <span class="p">]]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">data_raisin</span><span class="p">[</span><span class="s1">&#39;Class&#39;</span><span class="p">]</span>
+ 
+<span class="c1"># Membagi dataset menjadi data latih &amp; data uji</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df1</span> <span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;Raisin_Train&quot;</span><span class="p">,</span><span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">df1</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;Raisin_Test&quot;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: mysql-connector-python in /root/venv/lib/python3.11/site-packages (8.4.0)
+
+<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> A new release of pip is available: <span class=" -Color -Color-Red">23.1.2</span> -&gt; <span class=" -Color -Color-Green">24.0</span>
+<span class=" -Color -Color-Bold">[</span><span class=" -Color -Color-Blue">notice</span><span class=" -Color -Color-Bold">]</span> To update, run: <span class=" -Color -Color-Green">pip install --upgrade pip</span>
+/tmp/ipykernel_137/1051695515.py:19: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  data_raisin = pd.read_sql(sql_query, conn)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Kita download terlebih dahulu data yang dibutuhkan, yakni data train dan data test dalam format csv.</p>
+</section>
+<section id="hasil-data-train-yang-sudah-didownload-dalam-bentuk-csv">
+<h3>Hasil Data Train Yang Sudah Didownload dalam bentuk csv.<a class="headerlink" href="#hasil-data-train-yang-sudah-didownload-dalam-bentuk-csv" title="Link to this heading">#</a></h3>
+<img src="gambar/image-20240501-140222.png" width="" align="" /></section>
+<section id="data-train-diatas-dibagi-atau-difilter-untuk-membagi-classnya">
+<h3>Data Train diatas dibagi atau difilter untuk membagi Classnya.<a class="headerlink" href="#data-train-diatas-dibagi-atau-difilter-untuk-membagi-classnya" title="Link to this heading">#</a></h3>
+<p>Tujuan Dari membagi Class disini agar dapat mempermudah proses perhitungan manual di excel.</p>
+<p>Data Train Class Kecimen sejumlah 366 record</p>
+<img src="gambar/image-20240501-140639.png" width="" align="" /><p>Class Train Besni sejumlah 354 record</p>
+<img src="gambar/image-20240501-140718.png" width="" align="" /></section>
+<section id="hasil-data-test-sejumlah-180-record">
+<h3>Hasil Data Test sejumlah 180 record<a class="headerlink" href="#hasil-data-test-sejumlah-180-record" title="Link to this heading">#</a></h3>
+<img src="gambar/image-20240501-140744.png" width="" align="" /><p>Setelah melakukan pembagian data selanjutnya kita langsung saja melakukan proses Klasifikasi untuk menentukan kategori. Disini kita melakukan proses klasifikasi manual atau dengan prediksi dengan bantuan Sklearn Naive Bayes.</p>
+</section>
+</section>
+<section id="melakukan-perhitungan-klasifikasi-manual-diexcel">
+<h2>1. Melakukan Perhitungan Klasifikasi Manual DiExcel<a class="headerlink" href="#melakukan-perhitungan-klasifikasi-manual-diexcel" title="Link to this heading">#</a></h2>
+<p>Setelah Melakukan Proses pembagian Datasets Raisin yakni data train = 80% dan testnya = 20% diatas. Selanjutnya melakukan proses perhitungan di excel.</p>
+<section id="menghitung-probalitas-setiap-data-train">
+<h3>Menghitung Probalitas Setiap data Train<a class="headerlink" href="#menghitung-probalitas-setiap-data-train" title="Link to this heading">#</a></h3>
+<p>Dari rumus yang diberikan sebelumnya di langkah-langkah, akan dilakukan perhitungan probabilitas dari masing-masing kelas sesuai dengan jumlah data train pada kelas tersebut kemudian dibagi dengan banyaknya total data train</p>
+<img src="gambar/image-20240502-072206.png" width="" align="left" /><ul class="simple">
+<li><p>P(a) : probabilitas</p></li>
+</ul>
+<ul class="simple">
+<li><p>n(a) : banyaknya record dari suatu Class Data Train</p></li>
+</ul>
+<p>Kecimen mempunyau 366 record dengan probabilitasnya 0,41</p>
+<p>Besni mempunyai 354 record dengan probabilitasnya 0,39</p>
+</section>
+<section id="lalu-menghitung-mean-dan-std-dari-setiap-fitur-dari-setiap-classnya">
+<h3>Lalu menghitung mean dan std dari setiap fitur dari setiap Classnya.<a class="headerlink" href="#lalu-menghitung-mean-dan-std-dari-setiap-fitur-dari-setiap-classnya" title="Link to this heading">#</a></h3>
+<p>Class Kecimen :</p>
+<img src="gambar/image-20240501-143556.png" width="" align="" /><p>Class Besni :</p>
+<img src="gambar/image-20240501-143639.png" width="" align="" /></section>
+<section id="selanjutnya-menentukan-inputan-pada-fitur">
+<h3>Selanjutnya Menentukan Inputan pada fitur.<a class="headerlink" href="#selanjutnya-menentukan-inputan-pada-fitur" title="Link to this heading">#</a></h3>
+<img src="gambar/image-20240501-143925.png" width="" align="left" /></section>
+<section id="jika-sudah-selanjutnya-menghitung-distribusi-gaussian-setiap-fiturnya-pada-classnya">
+<h3>Jika sudah selanjutnya menghitung distribusi gaussian setiap fiturnya pada classnya.<a class="headerlink" href="#jika-sudah-selanjutnya-menghitung-distribusi-gaussian-setiap-fiturnya-pada-classnya" title="Link to this heading">#</a></h3>
+<p>Setelah didapati mean dan standart devisiasi dari setiap fitur pada setiap kelas, dan juga sudah menentukan inputan. maka langkah selanjutnya adalah memasukkan ke dalam rumus distribusi gaussian. Maka hasil seperti gambar dibawah ini.</p>
+<img src="gambar/image-20240501-144554.png" width="" align="left" /></section>
+<section id="menghitung-posteriori">
+<h3>Menghitung Posteriori<a class="headerlink" href="#menghitung-posteriori" title="Link to this heading">#</a></h3>
+<p>Setelah didapat semua hasul dari distribusi gaussian, langkah selanjutnya adalah menentukan poteriorinya. Dibawah ini hasil dan penjelasan rumus perhitungannya</p>
+<p>Deskripsi rumus :</p>
+<ul class="simple">
+<li><p>P(A|HI) : Hasil perkalian setiap fitur pada setiap classnya.</p></li>
+</ul>
+<ul class="simple">
+<li><p>P(a) : Probabilitas setiap classnya.</p></li>
+</ul>
+<p>Contoh perhitungan pada Class Kecimen :</p>
+<p>P(A|HI) = =B3<em>B4</em>B5<em>B6</em>B7<em>B8</em>B9*L2</p>
+<p>P(a) = 0,51 (L2) Pada perhitungan excel.</p>
+<p>Hasilnya Perhitunganya :</p>
+<img src="gambar/image-20240502-072352.png" width="" align="left" /></section>
+<section id="menentukan-maximum-dari-nilai-posteriori">
+<h3>Menentukan Maximum dari nilai Posteriori.<a class="headerlink" href="#menentukan-maximum-dari-nilai-posteriori" title="Link to this heading">#</a></h3>
+<p>Setelah didapati semua hasil perhitungan posteriorinya, langkah selanjutnya adalah menentukan nilai maximum dari posteriorinya. Dan didapati hasil dibawah ini.</p>
+<img src="gambar/image-20240502-072423.png" width="" align="left" /></section>
+<section id="kesimpulan">
+<h3>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h3>
+<p>Dari hasil perhitungan diatas dapat disimpulkan bahwa data dengan inputan sebagai berikut:</p>
+<ul class="simple">
+<li><p>Area : 72653</p></li>
+</ul>
+<ul class="simple">
+<li><p>MajorAxisLength : 403.190959</p></li>
+</ul>
+<ul class="simple">
+<li><p>MinorAxisLength : 231.055734</p></li>
+</ul>
+<ul class="simple">
+<li><p>Eccentricity : 0.819508</p></li>
+</ul>
+<ul class="simple">
+<li><p>ConvexArea : 74718</p></li>
+</ul>
+<ul class="simple">
+<li><p>Extent : 0.663898</p></li>
+</ul>
+<ul class="simple">
+<li><p>Perimeter : 1062.070</p></li>
+</ul>
+<p>Hasilnya ialah Class Kecimen, karena mendapatkan nilai posteriori tertinggi.</p>
+</section>
+</section>
+<section id="melakukan-prediksi-dengan-bantuan-sklearn-naive-bayes">
+<h2>2. Melakukan Prediksi dengan bantuan Sklearn Naive Bayes<a class="headerlink" href="#melakukan-prediksi-dengan-bantuan-sklearn-naive-bayes" title="Link to this heading">#</a></h2>
+<p>Setelah kita melakukan prediksi class data baru dengan perhitungan manual dengan bantuan excel, maka berikutnya kita akan membuktikan apakah prediksi dari hasil perhitungan manual kita benar apa salah dengan cara membuat model melalui bantuan sklearn. Dan berikut untuk Akurasi data nya.</p>
+<section id="hasil-akurasi-data">
+<h3>Hasil Akurasi Data<a class="headerlink" href="#hasil-akurasi-data" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># membuat model Gaussian naive bayes</span>
+<span class="n">gnb_model</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
+ 
+<span class="c1"># Melatih model dengan menggunakan data latih</span>
+<span class="n">gnb_model</span> <span class="o">=</span> <span class="n">gnb_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="c1"># Evaluasi Model</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">gnb_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+ 
+<span class="n">acc_secore</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_pred</span><span class="p">,</span> <span class="n">y_test</span><span class="p">),</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy: &#39;</span><span class="p">,</span> <span class="n">acc_secore</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy:  0.861
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hasil diatas menyentuh angka  0,7 - 0,9. Rentang ini sering dianggap sebagai akurasi yang baik. Model dengan akurasi di kisaran ini biasanya dianggap cukup efektif untuk banyak aplikasi.</p>
+<p>Setelah itu maka kita langsung akan memprediksi data dari perhitungan manual ke dalam model yang telah kita buat untk membandingkan apakah hasil class nya sama, untuk data yang akan kita inputkan adalah sebagai berikut.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">gnb_model</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">72653</span><span class="p">,</span> <span class="mf">403.190959</span><span class="p">,</span> <span class="mf">231.055734</span><span class="p">,</span> <span class="mf">0.819508</span><span class="p">,</span> <span class="mi">74718</span><span class="p">,</span>  <span class="mf">0.663898</span><span class="p">,</span> <span class="mf">1062.070</span><span class="p">]]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Kecimen&#39;]
+/shared-libs/python3.11/py/lib/python3.11/site-packages/sklearn/base.py:465: UserWarning: X does not have valid feature names, but GaussianNB was fitted with feature names
+  warnings.warn(
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hasil diatas prediksi dengan perhitunganya  sama yakni Class Kecimen dengan inputan yang sama dari data x test yakni [72653, 403.190959, 231.055734, 0.819508, 74718,  0.663898, 1062.070] yang Class Kecimen mendapatkan nilai posteriori tertinggi dengan hasil 3,32439E-16.</p>
+<p>Namun meskipun hasilnya sama dengan perhitungan manual seharusnya inputan tersebut masuk kedalam class Besni bukan kecimen, wajar karena accuracy data tidak sepenuhnya 100%, kita bisa mencobanya dengan inputan yang benar hasilnya seperti dibawah ini</p>
+<p>Perhitungan Manual</p>
+<img src="gambar/image-20240502-074751.png" width="" align="" /><p>Hasil Positori tertingginya menghasilkan class kecimen.</p>
+<img src="gambar/image-20240502-074840.png" width="" align="left" /><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">gnb_model</span><span class="o">.</span><span class="n">predict</span><span class="p">([[</span><span class="mi">49242</span><span class="p">,</span> <span class="mf">318.125407</span><span class="p">,</span> <span class="mf">200.12212</span><span class="p">,</span> <span class="mf">0.777351277</span><span class="p">,</span> <span class="mi">51368</span><span class="p">,</span>  <span class="mf">0.658456354</span><span class="p">,</span> <span class="mf">881.836</span><span class="p">]]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Kecimen&#39;]
+/shared-libs/python3.11/py/lib/python3.11/site-packages/sklearn/base.py:465: UserWarning: X does not have valid feature names, but GaussianNB was fitted with feature names
+  warnings.warn(
+</pre></div>
+</div>
+</div>
+</div>
+<p>Disini kita coba printkan gnb_model.predict dan masukkan data test yang akan digunakan untuk nantinya bisa kita bandingkan dengan perhitungan manual menggunakan excel, dan didapatkan hasil yang sama yakni Kecimen.</p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="kesimpulan-hasil-analisis-klasifikasi">
+<h1>Kesimpulan Hasil Analisis Klasifikasi  :<a class="headerlink" href="#kesimpulan-hasil-analisis-klasifikasi" title="Link to this heading">#</a></h1>
+<p>Dapat kita simpulkan dengan metode klasifikasi Naive Bayes ini dengan nilai prediksi 0.861. Bisa dikatakan sangat bagus untuk menentukan atau sortir Kategori Kismis atau Raisin dari perhitungan dari masing-masing fiturnya hasil dari teknologi machine vision
+system ini sangat akurat dibanding dengan cara manual oleh manusia yang sering terjadi human error. Dengan hasil analisis dengan Metode Klasifikasi ini hasil dari machine vision
+system ini dapat membantu
+sistem penyortiran kismis jenis Besni dan Kecimen untuk meningkatkan
+efisiensi di industri.</p>
+<a style='text-decoration:none;line-height:16px;display:flex;color:#5B5B62;padding:10px;justify-content:end;' href='https://deepnote.com?utm_source=created-in-deepnote-cell&projectId=bd7bfa42-6d65-487b-b353-2531ed4bd5d7' target="_blank">
+<img alt='Created in deepnote.com' style='display:inline;max-height:16px;margin:0px;margin-right:7.5px;' src='data:gambar/image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iODBweCIgaGVpZ2h0PSI4MHB4IiB2aWV3Qm94PSIwIDAgODAgODAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU0LjEgKDc2NDkwKSAtIGh0dHBzOi8vc2tldGNoYXBwLmNvbSAtLT4KICAgIDx0aXRsZT5Hcm91cCAzPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IkxhbmRpbmciIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJBcnRib2FyZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEyMzUuMDAwMDAwLCAtNzkuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjM1LjAwMDAwMCwgNzkuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aC0yMCIgZmlsbD0iIzAyNjVCNCIgcG9pbnRzPSIyLjM3NjIzNzYyIDgwIDM4LjA0NzY2NjcgODAgNTcuODIxNzgyMiA3My44MDU3NTkyIDU3LjgyMTc4MjIgMzIuNzU5MjczOSAzOS4xNDAyMjc4IDMxLjY4MzE2ODMiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNS4wMDc3MTgsODAgQzQyLjkwNjIwMDcsNzYuNDU0OTM1OCA0Ny41NjQ5MTY3LDcxLjU0MjI2NzEgNDguOTgzODY2LDY1LjI2MTk5MzkgQzUxLjExMjI4OTksNTUuODQxNTg0MiA0MS42NzcxNzk1LDQ5LjIxMjIyODQgMjUuNjIzOTg0Niw0OS4yMTIyMjg0IEMyNS40ODQ5Mjg5LDQ5LjEyNjg0NDggMjkuODI2MTI5Niw0My4yODM4MjQ4IDM4LjY0NzU4NjksMzEuNjgzMTY4MyBMNzIuODcxMjg3MSwzMi41NTQ0MjUgTDY1LjI4MDk3Myw2Ny42NzYzNDIxIEw1MS4xMTIyODk5LDc3LjM3NjE0NCBMMzUuMDA3NzE4LDgwIFoiIGlkPSJQYXRoLTIyIiBmaWxsPSIjMDAyODY4Ij48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCwzNy43MzA0NDA1IEwyNy4xMTQ1MzcsMC4yNTcxMTE0MzYgQzYyLjM3MTUxMjMsLTEuOTkwNzE3MDEgODAsMTAuNTAwMzkyNyA4MCwzNy43MzA0NDA1IEM4MCw2NC45NjA0ODgyIDY0Ljc3NjUwMzgsNzkuMDUwMzQxNCAzNC4zMjk1MTEzLDgwIEM0Ny4wNTUzNDg5LDc3LjU2NzA4MDggNTMuNDE4MjY3Nyw3MC4zMTM2MTAzIDUzLjQxODI2NzcsNTguMjM5NTg4NSBDNTMuNDE4MjY3Nyw0MC4xMjg1NTU3IDM2LjMwMzk1NDQsMzcuNzMwNDQwNSAyNS4yMjc0MTcsMzcuNzMwNDQwNSBDMTcuODQzMDU4NiwzNy43MzA0NDA1IDkuNDMzOTE5NjYsMzcuNzMwNDQwNSAwLDM3LjczMDQ0MDUgWiIgaWQ9IlBhdGgtMTkiIGZpbGw9IiMzNzkzRUYiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+' > </img>
+Created in <span style='font-weight:600;margin-left:4px;'>Deepnote</span></a></section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="markdown.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Markdown Files</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="markdown-notebooks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. Analisis Untuk mengetahui Kategori Kismis(Raisin)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan-analisis-penyortiran-kategori-jenis-kismis-untuk-bisnis-industri">Tujuan Analisis Penyortiran Kategori Jenis Kismis Untuk Bisnis Industri:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-kismis">Apa Itu Kismis ?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding-memahami-data-kismis">2. Data Understanding / Memahami data kismis</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengumpulan-data">Pengumpulan Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-datasets">Mencari Datasets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-dan-menampilkan-datasets">Mengambil dan Menampilkan Datasets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#memahami-data">Memahami Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#korelasi-input-target">Korelasi input-target</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-mengetahui-detail-datasets-raisin">Explore / Mengetahui Detail Datasets Raisin</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jumlah-data-fitur-dan-tipe-data">Jumlah Data Fitur dan Tipe Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jumlah-data-dari-datasets-raisin">Jumlah Data Dari Datasets Raisin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jumlah-class-pada-data-kategori-setiap-class">Jumlah Class pada data / Kategori setiap Class</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-datasets">Deskripsi Datasets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-data">3.Preprocessing Data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identifikasi-data">Identifikasi Data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-data-missing-values">1. Deteksi Data Missing Values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-data-outlier">2. Deteksi Data Outlier</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling">4. Modelling</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pemilihan-model">Pemilihan Model</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gaussian-naive-bayes-classification">GAUSSIAN NAIVE BAYES CLASSIFICATION</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-train-data-test">Membagi Data Train &amp; Data Test</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-train">Data Train</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-test">Data Test</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mendownload-data-train-test-untuk-perhitungan-manual">Mendownload Data Train &amp; Test untuk perhitungan manual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-data-train-yang-sudah-didownload-dalam-bentuk-csv">Hasil Data Train Yang Sudah Didownload dalam bentuk csv.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-train-diatas-dibagi-atau-difilter-untuk-membagi-classnya">Data Train diatas dibagi atau difilter untuk membagi Classnya.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-data-test-sejumlah-180-record">Hasil Data Test sejumlah 180 record</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#melakukan-perhitungan-klasifikasi-manual-diexcel">1. Melakukan Perhitungan Klasifikasi Manual DiExcel</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-probalitas-setiap-data-train">Menghitung Probalitas Setiap data Train</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lalu-menghitung-mean-dan-std-dari-setiap-fitur-dari-setiap-classnya">Lalu menghitung mean dan std dari setiap fitur dari setiap Classnya.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selanjutnya-menentukan-inputan-pada-fitur">Selanjutnya Menentukan Inputan pada fitur.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-sudah-selanjutnya-menghitung-distribusi-gaussian-setiap-fiturnya-pada-classnya">Jika sudah selanjutnya menghitung distribusi gaussian setiap fiturnya pada classnya.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-posteriori">Menghitung Posteriori</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-maximum-dari-nilai-posteriori">Menentukan Maximum dari nilai Posteriori.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#melakukan-prediksi-dengan-bantuan-sklearn-naive-bayes">2. Melakukan Prediksi dengan bantuan Sklearn Naive Bayes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akurasi-data">Hasil Akurasi Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan-hasil-analisis-klasifikasi">Kesimpulan Hasil Analisis Klasifikasi  :</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="assets/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="assets/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
