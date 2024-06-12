@@ -1,0 +1,71 @@
+Traceback (most recent call last):
+  File "C:\Users\Adi Sahrul R\AppData\Local\Programs\Python\Python312\Lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "C:\Users\Adi Sahrul R\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 1314, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adi Sahrul R\AppData\Local\Programs\Python\Python312\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Adi Sahrul R\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 685, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Adi Sahrul R\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\Adi Sahrul R\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\Adi Sahrul R\AppData\Local\Programs\Python\Python312\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import matplotlib.pyplot as plt
+
+# Mendefinisikan kolom-kolom yang ingin diamati
+columns = ['Area', 'MajorAxisLength', 'MinorAxisLength', 'Eccentricity', 'ConvexArea', 'Extent', 'Perimeter']
+
+# Menghitung IQR untuk setiap kolomnya
+Q1 = df_raisin[columns].quantile(0.25)
+Q3 = df_raisin[columns].quantile(0.75)
+IQR = Q3 - Q1
+
+# Menentukan ambang outlier
+outlier_threshold = 1.5
+
+# Identifikasi outlier di setiap kolomnya
+outliers = ((df_raisin[columns] < (Q1 - outlier_threshold * IQR)) | (df_raisin[columns] > (Q3 + outlier_threshold * IQR)))
+
+# Menghitung jumlah outlier di setiap kolom
+num_outliers = outliers.sum()
+
+# Buat boxplot untuk setiap kolom dengan outlier
+fig, axs = plt.subplots(1, len(columns), figsize=(16, 4))
+
+# Iterasi setiap kolom dan plot boxplot
+for i, column in enumerate(columns):
+    axs[i].boxplot(df_raisin[column])
+    axs[i].set_title(column)
+    axs[i].set_xlabel('Column')
+    axs[i].set_ylabel('Value')
+    axs[i].text(0.85, 0.85, f'Outliers: {num_outliers[column]}', transform=axs[i].transAxes, bbox=dict(facecolor='red', alpha=0.5))
+
+plt.tight_layout()
+plt.show()
+
+# Tampilkan jumlah outlier di setiap kolom
+print("Jumlah Data Outlier Setiap Kolom Fiturnya:")
+print(num_outliers)
+total_outliers = num_outliers.sum()
+print("Total Jumlah Data Outlier:", total_outliers)
+
+------------------
+
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+Cell [1;32mIn[8], line 1[0m
+[1;32m----> 1[0m [38;5;28;01mimport[39;00m [38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpyplot[39;00m [38;5;28;01mas[39;00m [38;5;21;01mplt[39;00m
+[0;32m      3[0m [38;5;66;03m# Mendefinisikan kolom-kolom yang ingin diamati[39;00m
+[0;32m      4[0m columns [38;5;241m=[39m [[38;5;124m'[39m[38;5;124mArea[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mMajorAxisLength[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mMinorAxisLength[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mEccentricity[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mConvexArea[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mExtent[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124mPerimeter[39m[38;5;124m'[39m]
+
+[1;31mModuleNotFoundError[0m: No module named 'matplotlib'
+
