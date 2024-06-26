@@ -172,7 +172,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="KEL1_UAS.html">
-                  Catatan UTS KELOMPOK1 Raisin Classification Datasets
+                  Catatan UTS KELOMPOK2 Raisin Classification Datasets
                 </a>
             </li>
         </ul>
@@ -450,7 +450,7 @@ document.write(`
 <p>Link menuju website yang sudah kami buat atau hosting :</p>
 <p>Untuk Extrasi Gambar : <a class="reference external" href="https://mrtopeng.pythonanywhere.com/">https://mrtopeng.pythonanywhere.com/</a></p>
 <p>Untuk Klasifikasi : <a class="reference external" href="http://raisin.bmcwaterpool.my.id/">http://raisin.bmcwaterpool.my.id/</a></p>
-<img src="gambarrr/image-20240501-154910.png" width="" align="" /><section id="tujuan-analisis-penyortiran-kategori-jenis-kismis-untuk-bisnis-industri">
+<img src="gamb/image-20240501-154910.png" width="" align="" /><section id="tujuan-analisis-penyortiran-kategori-jenis-kismis-untuk-bisnis-industri">
 <h2>Tujuan Analisis Penyortiran Kategori Jenis Kismis Untuk Bisnis Industri:<a class="headerlink" href="#tujuan-analisis-penyortiran-kategori-jenis-kismis-untuk-bisnis-industri" title="Link to this heading">#</a></h2>
 <p>Jadi Tujuan Dari Analisis ini bertujuan untuk pengembangan
 sistem penyortiran Industri makanan, terutama yang bergerak dalam produksi dan pengolahan kismis, sering menghadapi tantangan dalam identifikasi dan pemisahan kategori kismis. Proses manual yang sebelumnya digunakan seringkali memakan waktu, mahal, dan tidak sepenuhnya akurat. Selain itu, kualitas hasil identifikasi dapat bervariasi bergantung pada tingkat keahlian dan pengalaman personel yang terlibat.</p>
@@ -472,7 +472,7 @@ diharapkan dapat menjadi dasar pengembangan
 sistem penyortiran kismis untuk meningkatkan
 efisiensi di industri. Dibawah ini Gambar dari  machine vision
 system.</p>
-<img src="gambarrr/image-20240512-211828.png" width="50%" align="" /><p>Referensi Sumber Penjelasan : <a class="reference external" href="https://dergipark.org.tr/tr/download/article-file/1227592">https://dergipark.org.tr/tr/download/article-file/1227592</a></p>
+<img src="gamb/image-20240512-211828.png" width="50%" align="" /><p>Referensi Sumber Penjelasan : <a class="reference external" href="https://dergipark.org.tr/tr/download/article-file/1227592">https://dergipark.org.tr/tr/download/article-file/1227592</a></p>
 <p>Setelah Memahami dan mengerti Kismis itu apa mulai dari darimana asalnya, cara mengolahnya sampai bisa digunakan untuk apa aja buah kismis ini. Kita langsung ketahap Data Understanding atau memahami datasets kismis untuk proses klasifikasi.</p>
 </section>
 </section>
@@ -593,58 +593,58 @@ None
 <section id="segmentasi">
 <h3>Segmentasi<a class="headerlink" href="#segmentasi" title="Link to this heading">#</a></h3>
 <p>Sample Gambar Kismis :</p>
-<img src="gambarrr/image-20240529-175906.png" width="75%" align="center" /><ol class="arabic simple">
+<img src="gamb/image-20240529-175906.png" width="75%" align="center" /><ol class="arabic simple">
 <li><p>Area:</p></li>
 </ol>
-<img src="gambarrr/image-20240529-100709.png" width="100%" align="left" /><p>Deskripsi: Jumlah piksel yang terdapat di dalam batas-batas raisin. Jumlah piksel dalam batas butir kismis menunjukkan ukuran atau luas dari butir kismis tersebut. Semakin besar nilai area yang dihitung, semakin besar ukuran butir kismis. Untuk menghitung ukuran ini, kita perlu menghitung luas dari setiap butir kismis dengan cara menjumlahkan semua piksel yang ada di dalam butir tersebut. Setiap piksel yang terhitung akan menambah total luas area butir kismis.</p>
-<img src="gambarrr/image-20240529-174620.png" width="100%" align="left" /><p>Tipe Data: Numerik.
+<img src="gamb/image-20240529-100709.png" width="100%" align="left" /><p>Deskripsi: Jumlah piksel yang terdapat di dalam batas-batas raisin. Jumlah piksel dalam batas butir kismis menunjukkan ukuran atau luas dari butir kismis tersebut. Semakin besar nilai area yang dihitung, semakin besar ukuran butir kismis. Untuk menghitung ukuran ini, kita perlu menghitung luas dari setiap butir kismis dengan cara menjumlahkan semua piksel yang ada di dalam butir tersebut. Setiap piksel yang terhitung akan menambah total luas area butir kismis.</p>
+<img src="gamb/image-20240529-174620.png" width="100%" align="left" /><p>Tipe Data: Numerik.
 Ukuran: Satuan piksel persegi.</p>
 <p>Fungsi yang dipakai pada implementasi Extract Features Untuk Area :</p>
 <p>moments[‘m00’] Digunakan Menghitung Luas Objek: m00 memberikan luas dari objek dalam gambar. Misalnya, dalam gambar biner, m00 adalah jumlah piksel dengan nilai 1 (menunjukkan objek) dalam gambar.</p>
 <ol class="arabic simple" start="2">
 <li><p>MajorAxisLength:</p></li>
 </ol>
-<img src="gambarrr/image-20240529-100810.png" width="100%" align="left" /><p>Deskripsi: Panjang sumbu utama yaitu garis terpanjang yang dapat ditarik pada kismis. Mengukur lingkaran dilakukan dengan menghitung jarak antara batas butir kismis dan piksel di sekitarnya. Ini memberikan informasi tentang ukuran “utama” atau “panjang” dari butir kismis. Nilai yang lebih tinggi menunjukkan bahwa butir kismis cenderung memiliki bentuk yang lebih panjang atau memanjang. Dengan demikian, semakin besar nilai yang dihasilkan, semakin panjang atau membujur bentuk butir kismis tersebut.</p>
-<img src="gambarrr/image-20240529-174507.png" width="100%" align="left" /><p>Tipe Data: Numerik (continues)
+<img src="gamb/image-20240529-100810.png" width="100%" align="left" /><p>Deskripsi: Panjang sumbu utama yaitu garis terpanjang yang dapat ditarik pada kismis. Mengukur lingkaran dilakukan dengan menghitung jarak antara batas butir kismis dan piksel di sekitarnya. Ini memberikan informasi tentang ukuran “utama” atau “panjang” dari butir kismis. Nilai yang lebih tinggi menunjukkan bahwa butir kismis cenderung memiliki bentuk yang lebih panjang atau memanjang. Dengan demikian, semakin besar nilai yang dihasilkan, semakin panjang atau membujur bentuk butir kismis tersebut.</p>
+<img src="gamb/image-20240529-174507.png" width="100%" align="left" /><p>Tipe Data: Numerik (continues)
 Ukuran: Satuan piksel.</p>
 <p>Fungsi yang dipakai pada implementasi Extract Features Untuk Major Axis Length :</p>
 <p>major_axis_length = moments[‘mu20’] ** 0.5</p>
 <ol class="arabic simple" start="3">
 <li><p>MinorAxisLength:</p></li>
 </ol>
-<img src="gambarrr/image-20240529-100851.png" width="100%" align="left" /><p>Deskripsi: Panjang sumbu kecil yang merupakan garis terpendek yang dapat ditarik pada kismis. Yakni Mengarah pada panjang sumbu minor dari setiap butir kismis dalam dataset, sumbu minor adalah salah satu sumbu dari elips yang mewakili bentuk geometris butir kismis. Ini memberikan informasi tentang ukuran “minor” atau “lebar” dari butir kismis. Nilai yang lebih rendah menunjukkan bahwa butir kismis cenderung memiliki bentuk yang lebih bulat. Oleh karena itu, semakin kecil nilai sumbu minor, semakin bulat dan lebih lebar bentuk butir kismis tersebut, menunjukkan proporsi yang lebih seragam.</p>
-<img src="gambarrr/image-20240529-174723.png" width="100%" align="left" /><p>Tipe Data: Numerik (Continue)
+<img src="gamb/image-20240529-100851.png" width="100%" align="left" /><p>Deskripsi: Panjang sumbu kecil yang merupakan garis terpendek yang dapat ditarik pada kismis. Yakni Mengarah pada panjang sumbu minor dari setiap butir kismis dalam dataset, sumbu minor adalah salah satu sumbu dari elips yang mewakili bentuk geometris butir kismis. Ini memberikan informasi tentang ukuran “minor” atau “lebar” dari butir kismis. Nilai yang lebih rendah menunjukkan bahwa butir kismis cenderung memiliki bentuk yang lebih bulat. Oleh karena itu, semakin kecil nilai sumbu minor, semakin bulat dan lebih lebar bentuk butir kismis tersebut, menunjukkan proporsi yang lebih seragam.</p>
+<img src="gamb/image-20240529-174723.png" width="100%" align="left" /><p>Tipe Data: Numerik (Continue)
 Ukuran: Satuan piksel.</p>
 <p>Fungsi yang dipakai pada implementasi Rumus Extract Features Untuk Minor Axis Length :</p>
 <p>minor_axis_length = moments[‘mu02’] ** 0.5</p>
 <ol class="arabic simple" start="4">
 <li><p>Eccentricity:</p></li>
 </ol>
-<img src="gambarrr/image-20240529-101442.png" width="100%" align="left" /><p>Deskripsi: Eksentrisitas, Ukuran eksentrisitas elips yang memiliki momen yang sama dengan kismis. Di antara 0 dan 1, di mana nilai 0 menunjukkan elips sempurna dan nilai mendekati 1 menunjukkan elips yang sangat memanjang.</p>
-<img src="gambarrr/image-20240530-073143.png" width="100%" align="left" /><p>Tipe Data: Numerik
+<img src="gamb/image-20240529-101442.png" width="100%" align="left" /><p>Deskripsi: Eksentrisitas, Ukuran eksentrisitas elips yang memiliki momen yang sama dengan kismis. Di antara 0 dan 1, di mana nilai 0 menunjukkan elips sempurna dan nilai mendekati 1 menunjukkan elips yang sangat memanjang.</p>
+<img src="gamb/image-20240530-073143.png" width="100%" align="left" /><p>Tipe Data: Numerik
 Ukuran: Tidak memiliki satuan karena merupakan perbandingan.</p>
 <p>Fungsi yang dipakai pada implementasi Rumus Extract Features Untuk Eccentricity : eccentricity = ((moments[‘mu20’] - moments[‘mu02’]) ** 2 + 4 * moments[‘mu11’] ** 2) ** 0.5 / (moments[‘mu20’] + moments[‘mu02’])</p>
 <ol class="arabic simple" start="5">
 <li><p>ConvexArea:</p></li>
 </ol>
-<img src="gambarrr/image-20240529-175609.png" width="100%" align="left" /><p>Deskripsi: Luas daerah raisin yang melingkupi bentuk kismis secara konveks. Mengarah pada luas area terkecil yang dapat menutupi setiap butir kismis dalam dataset dengan poligon konveks. Ini memberikan informasi tentang “area minimal” yang dibutuhkan untuk menutupi butir kismis dengan poligon konveks. Area minimal ini bisa memberikan indikasi tentang kompleksitas bentuk butir kismis. Semakin besar luas area minimal, semakin kompleks atau tidak beraturan bentuk butir kismis tersebut. Sebaliknya, bentuk yang lebih sederhana atau bulat akan membutuhkan area yang lebih kecil untuk ditutupi dengan poligon konveks.</p>
-<img src="gambarrr/image-20240529-174949.png" width="100%" align="left" /><p>Tipe Data: Numerik.
+<img src="gamb/image-20240529-175609.png" width="100%" align="left" /><p>Deskripsi: Luas daerah raisin yang melingkupi bentuk kismis secara konveks. Mengarah pada luas area terkecil yang dapat menutupi setiap butir kismis dalam dataset dengan poligon konveks. Ini memberikan informasi tentang “area minimal” yang dibutuhkan untuk menutupi butir kismis dengan poligon konveks. Area minimal ini bisa memberikan indikasi tentang kompleksitas bentuk butir kismis. Semakin besar luas area minimal, semakin kompleks atau tidak beraturan bentuk butir kismis tersebut. Sebaliknya, bentuk yang lebih sederhana atau bulat akan membutuhkan area yang lebih kecil untuk ditutupi dengan poligon konveks.</p>
+<img src="gamb/image-20240529-174949.png" width="100%" align="left" /><p>Tipe Data: Numerik.
 Ukuran: Satuan piksel persegi.</p>
 <p>Fungsi yang dipakai pada implementasi Rumus Extract Features Untuk Convex Area :</p>
 <p>convex_area = cv2.contourArea(cv2.convexHull(largest_contour))</p>
 <ol class="arabic simple" start="6">
 <li><p>Extent:</p></li>
 </ol>
-<img src="gambarrr/image-20240529-175705.png" width="100%" align="left" /><p>Deskripsi: Rasio luas kismis terhadap luas persegi yang melingkupinya. Mengarah ke ukuran yang menggambarkan seberapa banyak area dari suatu objek yang tertutup oleh kontur objek tersebut. Dalam konteks butir kismis, extent memberikan informasi tentang seberapa “penuh” atau “kompleks” butir kismis tersebut. Nilai extent berkisar antara 0 dan 1, di mana nilai 1 menunjukkan bahwa seluruh area butir kismis tertutup oleh kontur, sementara nilai yang lebih rendah menunjukkan bahwa ada bagian dari area butir kismis yang tidak tertutup atau memiliki “lubang” di dalamnya. Dengan kata lain, semakin rendah nilai extent, semakin besar kemungkinan adanya bagian kosong atau celah dalam butir kismis, sehingga mengindikasikan tingkat kompleksitas atau ketidaksepenuhan butir tersebut.</p>
-<img src="gambarrr/image-20240529-175116.png" width="100%" align="left" /><p>Tipe Data: Numerik (Continuous)
+<img src="gamb/image-20240529-175705.png" width="100%" align="left" /><p>Deskripsi: Rasio luas kismis terhadap luas persegi yang melingkupinya. Mengarah ke ukuran yang menggambarkan seberapa banyak area dari suatu objek yang tertutup oleh kontur objek tersebut. Dalam konteks butir kismis, extent memberikan informasi tentang seberapa “penuh” atau “kompleks” butir kismis tersebut. Nilai extent berkisar antara 0 dan 1, di mana nilai 1 menunjukkan bahwa seluruh area butir kismis tertutup oleh kontur, sementara nilai yang lebih rendah menunjukkan bahwa ada bagian dari area butir kismis yang tidak tertutup atau memiliki “lubang” di dalamnya. Dengan kata lain, semakin rendah nilai extent, semakin besar kemungkinan adanya bagian kosong atau celah dalam butir kismis, sehingga mengindikasikan tingkat kompleksitas atau ketidaksepenuhan butir tersebut.</p>
+<img src="gamb/image-20240529-175116.png" width="100%" align="left" /><p>Tipe Data: Numerik (Continuous)
 Ukuran: Tidak memiliki satuan karena merupakan perbandingan.</p>
 <p>Fungsi yang dipakai pada implementasi Rumus Extract Features Untuk Extent :</p>
 <p>extent = area / convex_area</p>
 <ol class="arabic simple" start="7">
 <li><p>Perimeter:</p></li>
 </ol>
-<img src="gambarrr/image-20240529-175747.png" width="100%" align="center" /><p>Deskripsi: Panjang keliling kismis. Sebuah objek dalam konteks citra digital mengacu pada panjang lengkung luar dari kontur objek tersebut. Dalam kasus butir kismis, perimeter mengukur total panjang dari semua garis yang membentuk batas butir kismis tersebut. Panjang ini memberikan informasi tentang “kompleksitas” atau “detail” dari batas butir kismis. Semakin tinggi nilainya, semakin kompleks batas butir kismisnya, karena lebih banyak garis yang membentuk kontur butir tersebut, menunjukkan adanya lebih banyak detail pada batas butir kismis.</p>
-<img src="gambarrr/image-20240529-175204.png" width="50%" align="left" /><p>Tipe Data: Numerik (Continuous)
+<img src="gamb/image-20240529-175747.png" width="100%" align="center" /><p>Deskripsi: Panjang keliling kismis. Sebuah objek dalam konteks citra digital mengacu pada panjang lengkung luar dari kontur objek tersebut. Dalam kasus butir kismis, perimeter mengukur total panjang dari semua garis yang membentuk batas butir kismis tersebut. Panjang ini memberikan informasi tentang “kompleksitas” atau “detail” dari batas butir kismis. Semakin tinggi nilainya, semakin kompleks batas butir kismisnya, karena lebih banyak garis yang membentuk kontur butir tersebut, menunjukkan adanya lebih banyak detail pada batas butir kismis.</p>
+<img src="gamb/image-20240529-175204.png" width="50%" align="left" /><p>Tipe Data: Numerik (Continuous)
 Ukuran: Tidak memiliki satuan karena merupakan perbandingan.</p>
 <p>Class: Kelas target dari raisin, yaitu jenis Kecimen atau Besni.
 Tipe Data: Categorical</p>
@@ -1351,7 +1351,7 @@ efisiensi di industri.</p>
 </section>
 <section id="ensemble-learning">
 <h2>Ensemble Learning<a class="headerlink" href="#ensemble-learning" title="Link to this heading">#</a></h2>
-<img src="gambarrr/image-20240612-235103.png" width="50%" align="center" /><p>Metode ensemble adalah teknik yang menggabungkan beberapa classifier individu untuk membentuk classifier baru, dengan tujuan untuk mencapai hasil yang lebih akurat. Metode ini telah banyak digunakan dalam berbagai penelitian karena terbukti mampu meningkatkan akurasi. Dalam metode ensemble, beberapa classifier individu digabungkan untuk menggabungkan kelebihan masing-masing classifier sehingga kinerja keseluruhan dalam menyelesaikan tugas menjadi lebih baik. Contoh umum dari metode ensemble termasuk bagging, boosting, dan stacking. Namun, dalam kesempatan ini, kami hanya akan menggunakan bagging dan stacking untuk meningkatkan model.</p>
+<img src="gamb/image-20240612-235103.png" width="50%" align="center" /><p>Metode ensemble adalah teknik yang menggabungkan beberapa classifier individu untuk membentuk classifier baru, dengan tujuan untuk mencapai hasil yang lebih akurat. Metode ini telah banyak digunakan dalam berbagai penelitian karena terbukti mampu meningkatkan akurasi. Dalam metode ensemble, beberapa classifier individu digabungkan untuk menggabungkan kelebihan masing-masing classifier sehingga kinerja keseluruhan dalam menyelesaikan tugas menjadi lebih baik. Contoh umum dari metode ensemble termasuk bagging, boosting, dan stacking. Namun, dalam kesempatan ini, kami hanya akan menggunakan bagging dan stacking untuk meningkatkan model.</p>
 </section>
 <section id="stacking-classifier-meta-classifier">
 <h2>2. Stacking Classifier (Meta Classifier)<a class="headerlink" href="#stacking-classifier-meta-classifier" title="Link to this heading">#</a></h2>
@@ -1369,7 +1369,7 @@ efisiensi di industri.</p>
 <ol class="arabic simple" start="2">
 <li><p>Meningkatkan Performa : Model meta mempelajari cara terbaik untuk menggabungkan prediksi dari model dasar, yang sering kali menghasilkan peningkatan performa dibandingkan model individual.</p></li>
 </ol>
-<img src="gambarrr/image-20240612-184821.png" width="75%" align="" /><p>Langkah - langkah proses Gambar Stacking Diatas :</p>
+<img src="gamb/image-20240612-184821.png" width="75%" align="" /><p>Langkah - langkah proses Gambar Stacking Diatas :</p>
 <ol class="arabic simple">
 <li><p>Persiapan Data: Pisahkan dataset menjadi fitur (X) dan label (y), kemudian bagi dataset menjadi set pelatihan dan pengujian.</p></li>
 </ol>
@@ -2191,7 +2191,7 @@ weighted avg       0.84      0.83      0.83       180
 </section>
 <section id="bagging-bootstrap-aggregating">
 <h2>3. Bagging (Bootstrap Aggregating)<a class="headerlink" href="#bagging-bootstrap-aggregating" title="Link to this heading">#</a></h2>
-<img src="gambarrr/image-20240613-000652.png" width="75%" align="" /><p>Bagging, kependekan dari agregasi bootstrap, terutama diterapkan dalam klasifikasi dan regresi . Hal ini meningkatkan akurasi model melalui pohon keputusan, sehingga mengurangi varians secara signifikan. Pengurangan varians meningkatkan akurasi, menghilangkan overfitting, yang merupakan tantangan bagi banyak model prediktif. Secara umum untuk masalah regresi. Ini melibatkan pengambilan rata-rata prediksi. Rata-rata yang dihasilkan digunakan sebagai prediksi keseluruhan untuk model gabungan.</p>
+<img src="gamb/image-20240613-000652.png" width="75%" align="" /><p>Bagging, kependekan dari agregasi bootstrap, terutama diterapkan dalam klasifikasi dan regresi . Hal ini meningkatkan akurasi model melalui pohon keputusan, sehingga mengurangi varians secara signifikan. Pengurangan varians meningkatkan akurasi, menghilangkan overfitting, yang merupakan tantangan bagi banyak model prediktif. Secara umum untuk masalah regresi. Ini melibatkan pengambilan rata-rata prediksi. Rata-rata yang dihasilkan digunakan sebagai prediksi keseluruhan untuk model gabungan.</p>
 <p>Proses Klasifikasi Bagging melibatkan langkah-langkah berikut:</p>
 <ol class="arabic simple">
 <li><p>Kita mengambil dataset pelatihan awal yang dimiliki.</p></li>
