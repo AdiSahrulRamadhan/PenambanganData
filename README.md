@@ -23,7 +23,7 @@ b.) Untuk Klasifikasi : http://raisin.bmcwaterpool.my.id/
    
 Data : Wine (https://archive.ics.uci.edu/dataset/109/wine)
 
-Web Statis(Catatan): https://adisahrulramadhan.github.io/datamining1/WineDatasetUAS.html
+Web Statis(Catatan): https://adisahrulramadhan.github.io/datamining1/22_072_UAS_Penambangan_Data_Wine_UciDataset.html
 
 Deepnote : https://deepnote.com/workspace/dbmaning-e73c400f-1c0d-4ce8-9b8e-a20e73a317de/project/22-072-Adi-Sahrul-Ramadhan-bd7bfa42-6d65-487b-b353-2531ed4bd5d7/notebook/812efa58fb8f417c9a058cd8615fa9ed
 
