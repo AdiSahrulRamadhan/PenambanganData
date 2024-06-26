@@ -9,6 +9,7 @@ Kelompok 2
 Data : Raisin
 Deepnote : https://deepnote.com/workspace/dbmaning-e73c400f-1c0d-4ce8-9b8e-a20e73a317de/project/22-072-Adi-Sahrul-Ramadhan-bd7bfa42-6d65-487b-b353-2531ed4bd5d7/notebook/Kelompok%20UTS-cd3c651a82b547c5a16b1aa912889c47 
 https://adisahrulramadhan.github.io/datamining1/KEL1_UAS.html
+
 Link App :
 
 a.) Untuk Extrasi Gambar : https://mrtopeng.pythonanywhere.com/
