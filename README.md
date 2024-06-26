@@ -19,6 +19,7 @@ a.) Untuk Extrasi Gambar : https://mrtopeng.pythonanywhere.com/
 b.) Untuk Klasifikasi : http://raisin.bmcwaterpool.my.id/
 
 2. Catatan Web Statis Tugas Uas Individu Wine Datasets :
+   
 Data : Wine (https://archive.ics.uci.edu/dataset/109/wine)
 https://adisahrulramadhan.github.io/datamining1/WineDatasetUAS.html
 
